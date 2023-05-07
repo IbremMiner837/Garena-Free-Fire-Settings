@@ -11,7 +11,7 @@
   <a href="https://github.com/IbremMiner837/Garena-Free-Fire-Settings" style="text-decoration:none" area-label="Min API: 23">
     <img src="https://img.shields.io/badge/minSdkVersion-23-green.svg">
   </a>
-  <a href="https://play.google.com/store/apps/details?id=com.jvmfrog.ffsettings" style="text-decoration:none" area-label="Play Store">
+  <a href="https://play.google.com/store/apps/details?id=studio.jvmfrog.ffsettings" style="text-decoration:none" area-label="Play Store">
     <img src="https://img.shields.io/badge/Download-Google_Play-green.svg">
   </a>
   <a href="https://github.com/IbremMiner837/Garena-Free-Fire-Settings/blob/master/LICENSE.md" style="text-decoration:none" area-label="License: GPL v3">
@@ -24,9 +24,9 @@
 
 ___
 
-## 🆕 Material You Design Settings for Free Fire App for Android
+## 🆕 Material You Design is supported in the application.
 
-## ⚠ Join [@freefiresettingsapp](https://telegram.me/freefiresettingsapp) on Telegram for important updates.
+## ⚠ Subscribe to our [official Telegram channel](https://telegram.me/freefiresettingsapp) to stay updated on the latest events.
 ___
 
 ## 📱 Screenshots
@@ -40,10 +40,11 @@ ___
 Self-explanatory interface without overloaded menus.
 
 ## 📦 Included Features
--  Cloudy - new settings appear without the need to update the app
--  Support for devices from 12 different manufacturers
--  A large number of settings for different mobile devices
--  Ability to request settings for your mobile device
+- Cloud technology - new settings appear without needing to update the app
+- Multilingual support - different languages are supported and new ones are being added 
+- Support for devices from more than 12 different manufacturers
+- A large number of settings for different mobile devices
+- Ability to request settings for your mobile device
 
 We are trying our best to bring you the best user experience. The app is regularly being updated for bug fixes and new features.
 
@@ -58,7 +59,7 @@ If you have any feature suggestions, please create an issue with detailed inform
 
 ## 🔗 Social links
 **Official Telegram channel:** https://t.me/jvmfrog </br>
-**Official group in VK:** https://vk.com/jvmfrog <br>
+**Official group in VK:** https://vk.com/studio.jvmfrog <br>
 **Telegram channel of the application:** https://t.me/freefiresettingsapp <br>
 **Crowdin if you want to help with the translation of the application**: https://crwd.in/settings-for-free-fire-app <br>
 
