@@ -8,6 +8,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AlertDialog;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.textfield.TextInputEditText;
+
 import studio.jvmfrog.ffsettings.R;
 import studio.jvmfrog.ffsettings.utils.SharedPreferencesUtils;
 

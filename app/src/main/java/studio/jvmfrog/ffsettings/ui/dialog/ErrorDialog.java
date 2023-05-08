@@ -7,6 +7,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+
 import studio.jvmfrog.ffsettings.R;
 import studio.jvmfrog.ffsettings.utils.OtherUtils;
 

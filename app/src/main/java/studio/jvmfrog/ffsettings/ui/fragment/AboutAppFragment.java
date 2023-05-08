@@ -12,10 +12,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import studio.jvmfrog.ffsettings.BuildConfig;
+import com.jvmfrog.ffsettings.BuildConfig;
+
 import studio.jvmfrog.ffsettings.R;
 import studio.jvmfrog.ffsettings.databinding.FragmentAboutAppBinding;
-
 import studio.jvmfrog.ffsettings.utils.CustomTabUtil;
 import studio.jvmfrog.ffsettings.utils.BugReportHelper;
 import studio.jvmfrog.ffsettings.utils.OtherUtils;

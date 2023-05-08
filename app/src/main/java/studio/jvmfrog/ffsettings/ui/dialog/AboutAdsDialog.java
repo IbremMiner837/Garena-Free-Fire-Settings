@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+
 import studio.jvmfrog.ffsettings.BuildConfig;
 import studio.jvmfrog.ffsettings.R;
 
