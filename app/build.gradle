@@ -8,29 +8,13 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.jvmfrog.ffsettings"
+        applicationId "studio.jvmfrog.ffsettings"
         minSdk 23
         targetSdk 33
-        versionCode 22
-        versionName "v1.3.0"
+        versionCode 25
+        versionName "v1.4.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-    }
-
-    signingConfigs {
-        release {
-            storeFile file('C:\\Users\\User\\AndroidStudioProjects\\Garena-Free-Fire-Settings\\ffsettings.jks')
-            storePassword KEYSTORE_PASSWORD
-            keyAlias KEY_ALIAS
-            keyPassword KEY_PASSWORD
-        }
-
-        pro {
-            storeFile file('C:\\Users\\User\\AndroidStudioProjects\\Garena-Free-Fire-Settings\\ffsettings.jks')
-            storePassword KEYSTORE_PASSWORD
-            keyAlias KEY_ALIAS
-            keyPassword KEY_PASSWORD
-        }
     }
 
     buildTypes {
@@ -42,16 +26,7 @@ android {
 
         debug {
             //applicationIdSuffix '.debug'
-            versionNameSuffix '-DEBUG'
-        }
-
-        pro {
-            minifyEnabled true
-            shrinkResources true
-            applicationIdSuffix '.pro'
-            versionNameSuffix '-Pro'
-            signingConfig signingConfigs.pro
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            versionNameSuffix ' Debug'
         }
     }
 
@@ -84,24 +59,21 @@ dependencies {
     implementation "androidx.navigation:navigation-ui:$nav_version"
 
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'com.google.android.material:material:1.9.0'
 
     implementation platform('com.google.firebase:firebase-bom:31.1.0')
     implementation 'com.google.firebase:firebase-analytics'
-    implementation 'com.google.firebase:firebase-crashlytics:18.3.4'
-    implementation 'com.google.firebase:firebase-messaging:23.1.1'
-    implementation 'com.google.firebase:firebase-inappmessaging-display:20.3.0'
+    implementation 'com.google.firebase:firebase-crashlytics:18.3.7'
+    implementation 'com.google.firebase:firebase-messaging:23.1.2'
+    implementation 'com.google.firebase:firebase-inappmessaging-display:20.3.2'
 
     implementation 'androidx.browser:browser:1.5.0'
-    implementation 'androidx.core:core-splashscreen:1.0.0'
+    implementation 'androidx.core:core-splashscreen:1.0.1'
 
-    implementation 'com.github.crowdin.mobile-sdk-android:sdk:1.5.7'
-    implementation 'com.google.code.gson:gson:2.9.1'
+    implementation 'com.google.code.gson:gson:2.10.1'
     implementation 'com.android.volley:volley:1.2.1'
 
     implementation 'com.facebook.shimmer:shimmer:0.5.0'
-
-    implementation 'com.unity3d.ads:unity-ads:4.5.0'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

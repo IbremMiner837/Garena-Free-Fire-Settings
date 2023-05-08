@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/manufacturerFragment2"
-        android:name="com.jvmfrog.ffsettings.ui.fragment.ManufacturerFragment"
+        android:name="studio.jvmfrog.ffsettings.ui.fragment.ManufacturerFragment"
         android:label="fragment_manufacturer"
         tools:layout="@layout/fragment_manufacturer" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/devicesFragment"
-        android:name="com.jvmfrog.ffsettings.ui.fragment.DevicesFragment"
+        android:name="studio.jvmfrog.ffsettings.ui.fragment.DevicesFragment"
         android:label="fragment_devices"
         tools:layout="@layout/fragment_devices" >
         <action
@@ -28,12 +28,12 @@
     </fragment>
     <fragment
         android:id="@+id/deviceSettingsFragment"
-        android:name="com.jvmfrog.ffsettings.ui.fragment.DeviceSettingsFragment"
+        android:name="studio.jvmfrog.ffsettings.ui.fragment.DeviceSettingsFragment"
         android:label="fragment_device_settings"
         tools:layout="@layout/fragment_device_settings" />
     <fragment
         android:id="@+id/aboutAppFragment"
-        android:name="com.jvmfrog.ffsettings.ui.fragment.AboutAppFragment"
+        android:name="studio.jvmfrog.ffsettings.ui.fragment.AboutAppFragment"
         android:label="fragment_about_app"
         tools:layout="@layout/fragment_about_app" >
         <action
@@ -42,7 +42,7 @@
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.jvmfrog.ffsettings.ui.fragment.SettingsFragment"
+        android:name="studio.jvmfrog.ffsettings.ui.fragment.SettingsFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
 </navigation>
