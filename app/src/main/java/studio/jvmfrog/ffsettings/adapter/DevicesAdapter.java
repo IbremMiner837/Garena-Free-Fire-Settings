@@ -13,8 +13,7 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.jvmfrog.ffsettings.R;
+import studio.jvmfrog.ffsettings.R;
 import studio.jvmfrog.ffsettings.model.SensitivityModel;
 
 import java.util.List;

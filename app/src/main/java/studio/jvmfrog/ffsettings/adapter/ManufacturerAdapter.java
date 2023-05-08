@@ -12,7 +12,7 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.jvmfrog.ffsettings.R;
+import studio.jvmfrog.ffsettings.R;
 import studio.jvmfrog.ffsettings.model.ManufacturersModel;
 
 import java.util.List;

@@ -13,8 +13,8 @@ import androidx.appcompat.app.AppCompatDelegate;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.material.color.DynamicColors;
-import com.jvmfrog.ffsettings.R;
-import com.jvmfrog.ffsettings.databinding.FragmentSettingsBinding;
+import studio.jvmfrog.ffsettings.R;
+import studio.jvmfrog.ffsettings.databinding.FragmentSettingsBinding;
 
 import studio.jvmfrog.ffsettings.utils.SharedPreferencesUtils;
 

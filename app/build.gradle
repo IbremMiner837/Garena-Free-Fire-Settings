@@ -38,7 +38,7 @@ android {
     viewBinding {
         enabled = true
     }
-    namespace 'com.jvmfrog.ffsettings'
+    namespace 'studio.jvmfrog.ffsettings'
 
     buildFeatures {
         viewBinding true

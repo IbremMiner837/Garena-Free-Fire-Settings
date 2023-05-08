@@ -5,8 +5,8 @@ import android.content.Intent;
 import android.net.Uri;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
-import com.jvmfrog.ffsettings.BuildConfig;
-import com.jvmfrog.ffsettings.R;
+import studio.jvmfrog.ffsettings.BuildConfig;
+import studio.jvmfrog.ffsettings.R;
 
 public class AboutAdsDialog {
     private Context context;

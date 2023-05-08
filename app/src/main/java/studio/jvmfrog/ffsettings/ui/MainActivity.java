@@ -18,8 +18,8 @@ import com.google.android.material.color.DynamicColors;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import studio.jvmfrog.ffsettings.MyApplication;
-import com.jvmfrog.ffsettings.R;
-import com.jvmfrog.ffsettings.databinding.ActivityMainBinding;
+import studio.jvmfrog.ffsettings.R;
+import studio.jvmfrog.ffsettings.databinding.ActivityMainBinding;
 
 import studio.jvmfrog.ffsettings.utils.SharedPreferencesUtils;
 

@@ -1,17 +1,14 @@
 package studio.jvmfrog.ffsettings.utils;
 
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.SharedPreferences;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.os.LocaleListCompat;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
-import com.jvmfrog.ffsettings.R;
 
-import java.util.Locale;
+import studio.jvmfrog.ffsettings.R;
 
 public class PerAppLanguageManager {
     public static final String PREFERENCE_NAME = "shared_preference";

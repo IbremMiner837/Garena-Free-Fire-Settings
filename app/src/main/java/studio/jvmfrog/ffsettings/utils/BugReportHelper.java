@@ -9,8 +9,8 @@ import android.os.Build;
 import android.telephony.TelephonyManager;
 import android.widget.Toast;
 
-import com.jvmfrog.ffsettings.BuildConfig;
-import com.jvmfrog.ffsettings.R;
+import studio.jvmfrog.ffsettings.BuildConfig;
+import studio.jvmfrog.ffsettings.R;
 
 public class BugReportHelper {
 

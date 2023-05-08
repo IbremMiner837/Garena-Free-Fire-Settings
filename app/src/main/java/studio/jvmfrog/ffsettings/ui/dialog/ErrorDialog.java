@@ -7,7 +7,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
-import com.jvmfrog.ffsettings.R;
+import studio.jvmfrog.ffsettings.R;
 import studio.jvmfrog.ffsettings.utils.OtherUtils;
 
 public class ErrorDialog extends MaterialAlertDialogBuilder {

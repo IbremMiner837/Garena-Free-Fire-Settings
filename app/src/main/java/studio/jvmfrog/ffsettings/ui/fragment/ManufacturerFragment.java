@@ -11,8 +11,8 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 
 import com.google.android.material.progressindicator.LinearProgressIndicator;
-import com.jvmfrog.ffsettings.R;
-import com.jvmfrog.ffsettings.databinding.FragmentManufacturerBinding;
+import studio.jvmfrog.ffsettings.R;
+import studio.jvmfrog.ffsettings.databinding.FragmentManufacturerBinding;
 
 import studio.jvmfrog.ffsettings.adapter.ManufacturerAdapter;
 import studio.jvmfrog.ffsettings.ui.dialog.ChangeUsernameDialog;
