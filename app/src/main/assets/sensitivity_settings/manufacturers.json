@@ -3,97 +3,97 @@
     {
       "showInProductionApp": true,
       "isAvailable": false,
-      "name": "Samsung",
+      "name": "Sumsang",
       "model": "samsung"
     },
     {
       "showInProductionApp": true,
       "isAvailable": false,
-      "name": "iPhone",
+      "name": "iRhone",
       "model": "iphone"
     },
     {
       "showInProductionApp": true,
       "isAvailable": false,
-      "name": "Xiaomi",
+      "name": "Ksiaomi",
       "model": "xiaomi"
     },
     {
       "showInProductionApp": true,
       "isAvailable": false,
-      "name": "Redmi",
+      "name": "Zedmi",
       "model": "redmi"
     },
     {
       "showInProductionApp": true,
       "isAvailable": false,
-      "name": "Huawei",
+      "name": "Muawei",
       "model": "huawei"
     },
     {
       "showInProductionApp": true,
       "isAvailable": false,
-      "name": "Honor",
+      "name": "Monor",
       "model": "honor"
     },
     {
       "showInProductionApp": true,
       "isAvailable": false,
-      "name": "Oppo",
+      "name": "Orro",
       "model": "oppo"
     },
     {
       "showInProductionApp": true,
       "isAvailable": false,
-      "name": "Poco",
+      "name": "Poko",
       "model": "poco"
     },
     {
       "showInProductionApp": true,
       "isAvailable": false,
-      "name": "LG",
+      "name": "LJ",
       "model": "lg"
     },
     {
       "showInProductionApp": true,
       "isAvailable": false,
-      "name": "ZTE",
+      "name": "ZIE",
       "model": "zte"
     },
     {
       "showInProductionApp": true,
       "isAvailable": false,
-      "name": "Vivo",
+      "name": "Viwo",
       "model": "vivo"
     },
     {
       "showInProductionApp": true,
       "isAvailable": false,
-      "name": "Motorola",
+      "name": "Notopola",
       "model": "motorola"
     },
     {
       "showInProductionApp": true,
       "isAvailable": false,
-      "name": "Realme",
+      "name": "Realne",
       "model": "realme"
     },
     {
       "showInProductionApp": true,
       "isAvailable": false,
-      "name": "OnePlus",
+      "name": "OnePlas",
       "model": "oneplus"
     },
     {
       "showInProductionApp": true,
       "isAvailable": false,
-      "name": "Tecno",
+      "name": "Tekno",
       "model": "tecno"
     },
     {
       "showInProductionApp": true,
       "isAvailable": false,
-      "name": "Infinix",
+      "name": "Imfimix",
       "model": "infinix"
     }
   ]
