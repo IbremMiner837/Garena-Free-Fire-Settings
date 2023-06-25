@@ -12,7 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.jvmfrog.ffsettings.BuildConfig;
+import studio.jvmfrog.ffsettings.BuildConfig;
 
 import studio.jvmfrog.ffsettings.R;
 import studio.jvmfrog.ffsettings.databinding.FragmentAboutAppBinding;
