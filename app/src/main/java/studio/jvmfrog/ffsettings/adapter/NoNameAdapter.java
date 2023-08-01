@@ -26,12 +26,12 @@ public class NoNameAdapter extends RecyclerView.Adapter<NoNameAdapter.NoNameView
 
     @Override
     public void onBindViewHolder(@NonNull NoNameAdapter.NoNameViewHolder holder, int position) {
-
+        //
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return list.size();
     }
 
     @NonNull
