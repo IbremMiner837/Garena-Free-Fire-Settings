@@ -63,4 +63,6 @@
     <string name="system_theme_description">L\'apparence de l\'application changera en fonction du thème Android</string>
     <string name="use_dynamic_colors">Utiliser des couleurs dynamiques</string>
     <string name="dynamic_colors_are_not_supported">Les couleurs dynamiques ne sont pas prises en charge</string>
+    <string name="devices_list">Liste des dispositifs</string>
+    <string name="sensitivity">Sensibilité</string>
 </resources>

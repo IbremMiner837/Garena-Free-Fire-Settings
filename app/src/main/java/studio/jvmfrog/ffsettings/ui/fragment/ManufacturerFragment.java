@@ -47,12 +47,12 @@ public class ManufacturerFragment extends Fragment {
 
         manager.isRequestFinished().observe(getViewLifecycleOwner(), aBoolean -> {
             if (!aBoolean) {
-                indicator.setVisibility(View.VISIBLE);
+                //indicator.setVisibility(View.VISIBLE);
                 binding.shimmerLayout.startShimmer();
                 binding.shimmerLayout.setVisibility(View.VISIBLE);
                 binding.recview.setVisibility(View.GONE);
             } else {
-                indicator.setVisibility(View.GONE);
+                //indicator.setVisibility(View.GONE);
                 binding.shimmerLayout.stopShimmer();
                 binding.shimmerLayout.setVisibility(View.GONE);
                 binding.recview.setVisibility(View.VISIBLE);

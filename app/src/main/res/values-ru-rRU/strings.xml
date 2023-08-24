@@ -64,4 +64,6 @@
     <string name="system_theme_description">Внешний вид приложения будет меняться в зависимости от темы Android</string>
     <string name="use_dynamic_colors">Включить динамические цвета</string>
     <string name="dynamic_colors_are_not_supported">Динамические цвета не поддерживаются</string>
+    <string name="devices_list">Список устройств</string>
+    <string name="sensitivity">Чувствительность</string>
 </resources>

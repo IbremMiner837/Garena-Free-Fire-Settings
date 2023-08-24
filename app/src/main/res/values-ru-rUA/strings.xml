@@ -62,4 +62,6 @@
     <string name="system_theme_description">Зовнішній вигляд програми буде змінюватися в залежності від теми Android</string>
     <string name="use_dynamic_colors">Використовуйте динамічні кольори</string>
     <string name="dynamic_colors_are_not_supported">Динамічні кольори не підтримуються</string>
+    <string name="devices_list">Список пристроїв</string>
+    <string name="sensitivity">Чутливість</string>
 </resources>

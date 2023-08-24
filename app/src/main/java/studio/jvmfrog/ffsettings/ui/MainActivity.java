@@ -10,7 +10,9 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.splashscreen.SplashScreen;
 import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
+import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -24,10 +26,9 @@ import studio.jvmfrog.ffsettings.databinding.ActivityMainBinding;
 import studio.jvmfrog.ffsettings.utils.SharedPreferencesUtils;
 
 public class MainActivity extends AppCompatActivity {
+
+    private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
-    private NavHostFragment navHostFragment;
-    private ActionBar actionBar;
-    private NavController navController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,10 +38,10 @@ public class MainActivity extends AppCompatActivity {
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         if (SharedPreferencesUtils.getBoolean(this, "useDynamicColors"))
             DynamicColors.applyToActivityIfAvailable(this);
+
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         setSupportActionBar(binding.toolbar);
-        actionBar = getSupportActionBar();
 
         if (!SharedPreferencesUtils.getBoolean(this, "isFirstOpen")) {
             MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(new ContextThemeWrapper(this, R.style.Theme_FFSettings_MaterialAlertDialog));
@@ -51,51 +52,38 @@ public class MainActivity extends AppCompatActivity {
             builder.show();
         }
 
-        navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment_content_main);
-        assert navHostFragment != null;
-        navController = navHostFragment.getNavController();
-        BottomNavigationView bottomNav = findViewById(R.id.bottomAppBar);
-        NavigationUI.setupWithNavController(bottomNav, navController);
-    }
-
-
-
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        int id = navHostFragment.getNavController().getCurrentDestination().getId();
-        if (!(id == R.id.devicesFragment || id == R.id.deviceSettingsFragment || id == R.id.settingsFragment)) {
-            actionBar.setDisplayHomeAsUpEnabled(false);
-        }
-    }
-
-    @Override
-    public void recreate() {
-        getWindow().setWindowAnimations(R.style.WindowAnimationFadeInOut);
-        super.recreate();
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
+        appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
+        NavigationUI.setupWithNavController(binding.bottomAppBar, navController);
+        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.top_app_bar_menu, menu);
         return true;
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem menuItem) {
-        int id = navHostFragment.getNavController().getCurrentDestination().getId();
-        int item = menuItem.getItemId();
-        switch (item) {
-            case android.R.id.home:
-                onBackPressed();
-                return true;
-            case R.id.settings:
-                if (id == R.id.manufacturerFragment2)
-                    navController.navigate(R.id.action_manufacturerFragment2_to_settingsFragment);
-                else if (id == R.id.aboutAppFragment)
-                    navController.navigate(R.id.action_aboutAppFragment_to_settingsFragment);
-                return true;
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.settings) {
+            return true;
         }
-        return super.onOptionsItemSelected(menuItem);
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
+        return NavigationUI.navigateUp(navController, appBarConfiguration)
+                || super.onSupportNavigateUp();
     }
 }

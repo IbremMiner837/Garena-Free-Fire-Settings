@@ -63,4 +63,6 @@
     <string name="system_theme_description">Uygulamanın görünümü, Android temasına bağlı olarak değişecektir.</string>
     <string name="use_dynamic_colors">Dinamik renkler kullanın</string>
     <string name="dynamic_colors_are_not_supported">Dinamik renkler desteklenmez</string>
+    <string name="devices_list">Cihaz listesi</string>
+    <string name="sensitivity">Duyarlılık</string>
 </resources>

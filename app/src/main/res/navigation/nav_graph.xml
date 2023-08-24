@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/manufacturerFragment2"
         android:name="studio.jvmfrog.ffsettings.ui.fragment.ManufacturerFragment"
-        android:label="fragment_manufacturer"
-        tools:layout="@layout/fragment_manufacturer" >
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_manufacturer">
         <action
             android:id="@+id/action_manufacturerFragment2_to_devicesFragment"
             app:destination="@id/devicesFragment" />
@@ -20,8 +20,8 @@
     <fragment
         android:id="@+id/devicesFragment"
         android:name="studio.jvmfrog.ffsettings.ui.fragment.DevicesFragment"
-        android:label="fragment_devices"
-        tools:layout="@layout/fragment_devices" >
+        android:label="@string/devices_list"
+        tools:layout="@layout/fragment_devices">
         <action
             android:id="@+id/action_devicesFragment_to_deviceSettingsFragment"
             app:destination="@id/deviceSettingsFragment" />
@@ -29,13 +29,13 @@
     <fragment
         android:id="@+id/deviceSettingsFragment"
         android:name="studio.jvmfrog.ffsettings.ui.fragment.DeviceSettingsFragment"
-        android:label="fragment_device_settings"
+        android:label="@string/sensitivity"
         tools:layout="@layout/fragment_device_settings" />
     <fragment
         android:id="@+id/aboutAppFragment"
         android:name="studio.jvmfrog.ffsettings.ui.fragment.AboutAppFragment"
-        android:label="fragment_about_app"
-        tools:layout="@layout/fragment_about_app" >
+        android:label="@string/about_app"
+        tools:layout="@layout/fragment_about_app">
         <action
             android:id="@+id/action_aboutAppFragment_to_settingsFragment"
             app:destination="@id/settingsFragment" />
@@ -43,6 +43,6 @@
     <fragment
         android:id="@+id/settingsFragment"
         android:name="studio.jvmfrog.ffsettings.ui.fragment.SettingsFragment"
-        android:label="fragment_settings"
+        android:label="@string/settings"
         tools:layout="@layout/fragment_settings" />
 </navigation>

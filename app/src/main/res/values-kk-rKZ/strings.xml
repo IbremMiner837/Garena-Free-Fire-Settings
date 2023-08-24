@@ -63,4 +63,6 @@
     <string name="system_theme_description">Қолданбаның көрінісі Android тақырыбына байланысты өзгереді</string>
     <string name="use_dynamic_colors">Динамикалық түстерді пайдаланыңыз</string>
     <string name="dynamic_colors_are_not_supported">Динамикалық түстерге қолдау көрсетілмейді</string>
+    <string name="devices_list">Құрылғы тізімі</string>
+    <string name="sensitivity">Чувствительдіктік</string>
 </resources>
