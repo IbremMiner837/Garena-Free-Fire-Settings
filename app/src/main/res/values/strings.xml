@@ -28,12 +28,12 @@
     <string name="admob_app_open_ad_id" translatable="false">ca-app-pub-4193046598871025/7460189368</string>
     <string name="admob_app_open_test_ad_id" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
 
-    <string name="review">Review</string>
-    <string name="collimator">Collimator</string>
+    <string name="review">General</string>
+    <string name="collimator">Red Dot</string>
     <string name="x2_scope">x2 Scope</string>
     <string name="x4_scope">x4 Scope</string>
     <string name="sniper_scope">Sniper Scope</string>
-    <string name="free_review">Free Review</string>
+    <string name="free_review">Free Look</string>
     <string name="dpi">DPI</string>
     <string name="fire_button">Fire Button</string>
     <string name="source">Source:</string>
@@ -83,4 +83,18 @@
     <string name="dynamic_colors_are_not_supported">Dynamic colors are not supported</string>
     <string name="devices_list">Devices list</string>
     <string name="sensitivity">Sensitivity</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
 </resources>

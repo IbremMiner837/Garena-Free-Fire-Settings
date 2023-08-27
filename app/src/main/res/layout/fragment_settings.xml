@@ -1,74 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="studio.jvmfrog.ffsettings.ui.fragment.SettingsFragment"
-    android:orientation="vertical"
-    android:animateLayoutChanges="true">
-    <com.google.android.material.card.MaterialCardView
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="21dp"
+    app:cardUseCompatPadding="true"
+    style="@style/Widget.Material3.CardView.Elevated">
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="16dp"
-        app:cardUseCompatPadding="true"
-        style="@style/Widget.Material3.CardView.Elevated">
-        <LinearLayout
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:orientation="vertical">
+            android:padding="8dp"
+            android:text="@string/app_theme"
+            android:textSize="21sp"
+            android:textStyle="bold"/>
 
-            <com.google.android.material.textview.MaterialTextView
+        <RadioGroup
+            android:id="@+id/appThemeRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/setFollowSystemTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/app_theme"
-                android:textSize="21sp"
-                android:textStyle="bold"/>
-            <RadioGroup
-                android:id="@+id/appThemeRadioGroup"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <com.google.android.material.radiobutton.MaterialRadioButton
-                    android:id="@+id/setAutoTheme"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/auto_theme"
-                    android:textSize="18sp"/>
-                <com.google.android.material.radiobutton.MaterialRadioButton
-                    android:id="@+id/setFollowSystemTheme"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/system_theme"
-                    android:textSize="18sp"/>
-                <com.google.android.material.radiobutton.MaterialRadioButton
-                    android:id="@+id/setLightTheme"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/light_theme"
-                    android:textSize="18sp"/>
-                <com.google.android.material.radiobutton.MaterialRadioButton
-                    android:id="@+id/setNightTheme"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/night_theme"
-                    android:textSize="18sp"/>
-            </RadioGroup>
-            <com.google.android.material.materialswitch.MaterialSwitch
-                android:id="@+id/dynamicColorsSwitch"
+                android:text="@string/system_theme"
+                android:textSize="18sp"/>
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/setLightTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingHorizontal="8dp"
-                android:text="@string/use_dynamic_colors"
-                android:textSize="18sp"
-                style="@style/Widget.Material3.CompoundButton.MaterialSwitch"/>
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/themeDescription"
+                android:text="@string/light_theme"
+                android:textSize="18sp"/>
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/setNightTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:text="@string/system_theme_description"/>
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
-</LinearLayout>
+                android:text="@string/night_theme"
+                android:textSize="18sp"/>
+        </RadioGroup>
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/dynamicColorsSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="8dp"
+            android:text="@string/use_dynamic_colors"
+            android:textSize="18sp"
+            style="@style/Widget.Material3.CompoundButton.MaterialSwitch"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/themeDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/system_theme_description"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -16,8 +16,7 @@
         android:layout_height="wrap_content"
         android:clickable="true"
         android:focusable="true"
-        app:cardCornerRadius="16dp"
-        app:cardElevation="4dp"
+        app:cardCornerRadius="21dp"
         app:cardUseCompatPadding="true">
 
         <LinearLayout
@@ -123,6 +122,7 @@
         android:id="@+id/recview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:padding="4dp"
         android:visibility="gone"/>
 
     <LinearLayout
@@ -136,7 +136,7 @@
             android:layout_height="wrap_content"
             android:contentDescription="@string/dont_have_your_phone_model"
             android:text="@string/dont_have_your_phone_model"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:textStyle="bold"
             style="@style/Widget.MaterialComponents.TextView"/>
 
@@ -150,7 +150,7 @@
             android:contentDescription="@string/then_click_here"
             android:singleLine="true"
             android:text="@string/then_click_here"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:textStyle="bold"
             android:textColor="#FF559DEF"/>
     </LinearLayout>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="8dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="studio.jvmfrog.ffsettings.ui.fragment.AboutAppFragment"
     android:orientation="vertical">
@@ -11,7 +12,7 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="16dp"
+        app:cardCornerRadius="21dp"
         app:cardUseCompatPadding="true"
         style="@style/Widget.Material3.CardView.Elevated">
 
@@ -109,7 +110,7 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="16dp"
+        app:cardCornerRadius="21dp"
         app:cardUseCompatPadding="true"
         style="@style/Widget.Material3.CardView.Elevated">
 

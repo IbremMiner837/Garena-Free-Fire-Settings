@@ -13,38 +13,36 @@
         android:paddingHorizontal="8dp"
         android:orientation="vertical">
 
-        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent"
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardUseCompatPadding="true"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="4dp"
+            app:cardCornerRadius="21dp"
             style="@style/Widget.Material3.CardView.Filled">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="21dp"
+                android:padding="16dp"
                 android:orientation="vertical">
 
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/textViewDPI"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:padding="18dp"
                     android:contentDescription="@string/dpi"
                     android:text="@string/dpi"
                     android:textSize="21sp"
                     android:textStyle="bold"
                     style="@style/Widget.MaterialComponents.TextView"/>
 
-                <com.google.android.material.divider.MaterialDivider
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
-
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/textViewReview"
                     style="@style/Widget.MaterialComponents.TextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:paddingHorizontal="18dp"
                     android:contentDescription="@string/review"
                     android:text="@string/review"
                     android:textSize="21sp"
@@ -65,6 +63,7 @@
                     android:id="@+id/textViewCollimator"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:paddingHorizontal="18dp"
                     android:contentDescription="@string/collimator"
                     android:text="@string/collimator"
                     android:textSize="21sp"
@@ -85,6 +84,7 @@
                     android:id="@+id/textViewX2Scope"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:paddingHorizontal="18dp"
                     android:contentDescription="@string/x2_scope"
                     android:text="@string/x2_scope"
                     android:textSize="21sp"
@@ -105,6 +105,7 @@
                     android:id="@+id/textViewX4Scope"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:paddingHorizontal="18dp"
                     android:contentDescription="@string/x4_scope"
                     android:text="@string/x4_scope"
                     android:textSize="21sp"
@@ -125,6 +126,7 @@
                     android:id="@+id/textViewSniperScope"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:paddingHorizontal="18dp"
                     android:contentDescription="@string/sniper_scope"
                     android:text="@string/sniper_scope"
                     android:textSize="21sp"
@@ -145,6 +147,7 @@
                     android:id="@+id/textViewFreeReview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:paddingHorizontal="18dp"
                     android:contentDescription="@string/free_review"
                     android:text="@string/free_review"
                     android:textSize="21sp"
@@ -165,6 +168,7 @@
                     android:id="@+id/textViewFireButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:paddingHorizontal="18dp"
                     android:contentDescription="@string/fire_button"
                     android:text="@string/fire_button"
                     android:textSize="21sp"
@@ -175,6 +179,7 @@
                         android:id="@+id/sliderFireButton"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
                         android:labelFor="@+id/textViewFireButton"
                         android:value="58"
                         android:valueFrom="0"
@@ -222,8 +227,7 @@
                 android:contentDescription="@string/copy_settings_button"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 app:cardUseCompatPadding="true"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="4dp"
+                app:cardCornerRadius="21dp"
                 android:clickable="true"
                 android:focusable="true"
                 style="@style/Widget.Material3.CardView.Filled">
