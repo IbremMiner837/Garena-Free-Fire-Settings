@@ -5,6 +5,5 @@
         android:id="@+id/settings"
         android:icon="@drawable/ic_round_settings_24"
         android:title="@string/settings"
-        android:tint="?attr/colorControlNormal"
         app:showAsAction="ifRoom" />
 </menu>

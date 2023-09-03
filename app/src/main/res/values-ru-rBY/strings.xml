@@ -51,6 +51,7 @@
     <!--Accessibility-->
     <string name="copy_settings_button">Кнопка капіявання налад</string>
 
+    <string name="settings">Налады</string>
     <string name="app_theme">Тэма прыкладання</string>
     <string name="auto_theme">Аўто тэма</string>
     <string name="system_theme">Сістэмная тэма</string>

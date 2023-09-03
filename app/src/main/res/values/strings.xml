@@ -68,7 +68,7 @@
     <!--Accessibility-->
     <string name="copy_settings_button">Copy settings button</string>
 
-    <string name="settings" translatable="false">Settings</string>
+    <string name="settings">Settings</string>
     <string name="app_theme">App Theme</string>
     <string name="auto_theme">Auto theme</string>
     <string name="system_theme">System theme</string>

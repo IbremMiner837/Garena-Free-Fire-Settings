@@ -51,6 +51,7 @@
     <!--Accessibility-->
     <string name="copy_settings_button">Параметрлерді көшіру түймесі</string>
 
+    <string name="settings">"Орындар "</string>
     <string name="app_theme">Қолданба тақырыбы</string>
     <string name="auto_theme">Автоматты тақырып</string>
     <string name="system_theme">Жүйе тақырыбы</string>

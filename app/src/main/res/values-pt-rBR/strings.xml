@@ -51,6 +51,7 @@
     <!--Accessibility-->
     <string name="copy_settings_button">Bouton Copier les paramètres</string>
 
+    <string name="settings">Configurações</string>
     <string name="app_theme">Tema do aplicativo</string>
     <string name="auto_theme">Tema automático</string>
     <string name="system_theme">Tema do sistema</string>

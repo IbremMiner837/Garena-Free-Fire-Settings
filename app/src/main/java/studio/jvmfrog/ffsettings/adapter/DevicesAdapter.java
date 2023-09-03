@@ -58,6 +58,7 @@ public class DevicesAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             holder.itemView.setOnClickListener(v -> {
                 //UnityAdsManager.instance.showInterstitialAd();
                 Bundle finalBundle = new Bundle();
+                finalBundle.putString("device_model", models.get(position).getManufacturerName() + " " + models.get(position).getDeviceName());
                 finalBundle.putFloat("review", models.get(position).getReview());
                 finalBundle.putFloat("collimator", models.get(position).getCollimator());
                 finalBundle.putFloat("x2_scope", models.get(position).getX2Scope());

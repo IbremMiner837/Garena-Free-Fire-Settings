@@ -50,6 +50,7 @@
 
     <string name="copy_settings_button">Кнопка копіювання налаштувань</string>
 
+    <string name="settings">Налаштування</string>
     <string name="app_theme">Тема програми</string>
     <string name="auto_theme">Авто тема</string>
     <string name="system_theme">Тема системи</string>

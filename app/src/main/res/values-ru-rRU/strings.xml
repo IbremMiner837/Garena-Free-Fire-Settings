@@ -52,6 +52,7 @@
     <!--Accessibility-->
     <string name="copy_settings_button">Кнопка копирования настроек</string>
 
+    <string name="settings">Настройки</string>
     <string name="app_theme">Тема Приложения</string>
     <string name="auto_theme">Авто</string>
     <string name="system_theme">Системная тема</string>

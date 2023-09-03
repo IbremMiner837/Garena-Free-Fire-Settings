@@ -50,9 +50,9 @@ public class AboutAppFragment extends Fragment {
         binding.telegramBtn.setOnClickListener(v -> new CustomTabUtil().OpenCustomTab(getActivity(), "https://t.me/freefiresettingsapp", R.color.md_theme_light_onSecondary));
         binding.otherAppsBtn.setOnClickListener(view1 -> {
             try {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://search?q=pub:JVMFrog")));
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("rustore://apps.rustore.ru/app/" + BuildConfig.APPLICATION_ID)));
             } catch (android.content.ActivityNotFoundException anfe) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.GOOGLE_PLAY))));
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + BuildConfig.APPLICATION_ID)));
             }
         });
     }

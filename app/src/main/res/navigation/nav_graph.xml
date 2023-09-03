@@ -12,10 +12,10 @@
         tools:layout="@layout/fragment_manufacturer">
         <action
             android:id="@+id/action_manufacturerFragment2_to_devicesFragment"
-            app:destination="@id/devicesFragment" />
+            app:destination="@id/devicesFragment"/>
         <action
             android:id="@+id/action_manufacturerFragment2_to_settingsFragment"
-            app:destination="@id/settingsFragment" />
+            app:destination="@id/settingsFragment"/>
     </fragment>
     <fragment
         android:id="@+id/devicesFragment"
@@ -24,13 +24,13 @@
         tools:layout="@layout/fragment_devices">
         <action
             android:id="@+id/action_devicesFragment_to_deviceSettingsFragment"
-            app:destination="@id/deviceSettingsFragment" />
+            app:destination="@id/deviceSettingsFragment"/>
     </fragment>
     <fragment
         android:id="@+id/deviceSettingsFragment"
         android:name="studio.jvmfrog.ffsettings.ui.fragment.DeviceSettingsFragment"
-        android:label="@string/sensitivity"
-        tools:layout="@layout/fragment_device_settings" />
+        tools:layout="@layout/fragment_device_settings"
+        android:label="@string/settings" />
     <fragment
         android:id="@+id/aboutAppFragment"
         android:name="studio.jvmfrog.ffsettings.ui.fragment.AboutAppFragment"
@@ -38,7 +38,7 @@
         tools:layout="@layout/fragment_about_app">
         <action
             android:id="@+id/action_aboutAppFragment_to_settingsFragment"
-            app:destination="@id/settingsFragment" />
+            app:destination="@id/settingsFragment"/>
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"

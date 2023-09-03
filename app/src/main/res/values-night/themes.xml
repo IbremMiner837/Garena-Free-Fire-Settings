@@ -72,4 +72,10 @@
     <style name="Theme.FFSettings.MaterialAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
         <item name="android:tint">@color/md_theme_dark_onSurface</item>
     </style>
+
+    <style name="Theme.FFSettings.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="iconTint">@color/md_theme_dark_onSurface</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
 </resources>

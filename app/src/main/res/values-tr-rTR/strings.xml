@@ -51,6 +51,7 @@
     <!--Accessibility-->
     <string name="copy_settings_button">Ayarları kopyala düğmesi</string>
 
+    <string name="settings">Ayarlar</string>
     <string name="app_theme">Uygulama Teması</string>
     <string name="auto_theme">Otomatik tema</string>
     <string name="system_theme">Sistem teması</string>
