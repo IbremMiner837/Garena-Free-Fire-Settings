@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="8dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="studio.jvmfrog.ffsettings.ui.fragment.AboutAppFragment"
+    tools:context="com.jvmfrogsquad.ffsettings.ui.fragment.AboutAppFragment"
     android:orientation="vertical">
 
     <com.google.android.material.card.MaterialCardView

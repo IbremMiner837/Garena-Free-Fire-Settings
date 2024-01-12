@@ -7,7 +7,7 @@
     <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
     
     <application
-        android:name="studio.jvmfrog.ffsettings.MyApplication"
+        android:name="com.jvmfrogsquad.ffsettings.MyApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -28,7 +28,7 @@
                 android:value="true" />
         </service>
 
-        <activity android:name="studio.jvmfrog.ffsettings.ui.MainActivity"
+        <activity android:name="com.jvmfrogsquad.ffsettings.ui.MainActivity"
             android:configChanges="uiMode"
             android:exported="true"
             android:theme="@style/Theme.AppTheme.SplashScreen">

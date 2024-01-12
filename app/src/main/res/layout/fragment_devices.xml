@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingHorizontal="8dp"
-    tools:context="studio.jvmfrog.ffsettings.ui.fragment.DevicesFragment">
+    tools:context="com.jvmfrogsquad.ffsettings.ui.fragment.DevicesFragment">
 
     <com.facebook.shimmer.ShimmerFrameLayout
         android:id="@+id/shimmer_layout"

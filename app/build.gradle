@@ -5,12 +5,12 @@ plugins {
 }
 
 android {
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
-        applicationId "studio.jvmfrog.ffsettings"
+        applicationId "com.jvmfrogsquad.ffsettings"
         minSdk 23
-        targetSdk 33
+        targetSdk 34
         versionCode 26
         versionName "v1.4.0"
 
@@ -38,10 +38,11 @@ android {
     viewBinding {
         enabled = true
     }
-    namespace 'studio.jvmfrog.ffsettings'
+    namespace 'com.jvmfrogsquad.ffsettings'
 
     buildFeatures {
         viewBinding true
+        buildConfig true
     }
 
     bundle {
@@ -54,20 +55,20 @@ android {
 dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.preference:preference:1.2.1'
-    def nav_version = "2.5.3"
+    def nav_version = "2.7.6"
     implementation "androidx.navigation:navigation-fragment:$nav_version"
     implementation "androidx.navigation:navigation-ui:$nav_version"
 
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'com.google.android.material:material:1.11.0'
 
     implementation platform('com.google.firebase:firebase-bom:31.1.0')
     implementation 'com.google.firebase:firebase-analytics'
-    implementation 'com.google.firebase:firebase-crashlytics:18.3.7'
-    implementation 'com.google.firebase:firebase-messaging:23.1.2'
-    implementation 'com.google.firebase:firebase-inappmessaging-display:20.3.2'
+    implementation 'com.google.firebase:firebase-crashlytics:18.6.0'
+    implementation 'com.google.firebase:firebase-messaging:23.4.0'
+    implementation 'com.google.firebase:firebase-inappmessaging-display:20.4.0'
 
-    implementation 'androidx.browser:browser:1.5.0'
+    implementation 'androidx.browser:browser:1.7.0'
     implementation 'androidx.core:core-splashscreen:1.0.1'
 
     implementation 'com.google.code.gson:gson:2.10.1'
