@@ -38,6 +38,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="42dp"
+        android:gravity="center"
         android:padding="8dp"
         android:text="@string/welcome_to_our_app"
         android:textSize="21sp"
