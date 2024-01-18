@@ -7,7 +7,6 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
-
 import com.jvmfrogsquad.ffsettings.R;
 import com.jvmfrogsquad.ffsettings.utils.OtherUtils;
 
@@ -16,7 +15,7 @@ public class ErrorDialog extends MaterialAlertDialogBuilder {
 
     public ErrorDialog(@NonNull Context context) {
         super(context);
-        builder = new MaterialAlertDialogBuilder(new ContextThemeWrapper(context, R.style.Theme_FFSettings_MaterialAlertDialog));
+        builder = new MaterialAlertDialogBuilder(new ContextThemeWrapper(context, R.style.FFSettingsTheme_MaterialAlertDialog));
     }
 
     public void showWith(String title, String message) {

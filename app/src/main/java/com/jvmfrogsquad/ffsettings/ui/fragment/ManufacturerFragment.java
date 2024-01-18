@@ -12,9 +12,8 @@ import androidx.recyclerview.widget.GridLayoutManager;
 
 import com.google.android.material.progressindicator.LinearProgressIndicator;
 import com.jvmfrogsquad.ffsettings.R;
-import com.jvmfrogsquad.ffsettings.databinding.FragmentManufacturerBinding;
-
 import com.jvmfrogsquad.ffsettings.adapter.ManufacturerAdapter;
+import com.jvmfrogsquad.ffsettings.databinding.FragmentManufacturerBinding;
 import com.jvmfrogsquad.ffsettings.ui.dialog.ChangeUsernameDialog;
 import com.jvmfrogsquad.ffsettings.utils.CustomTabUtil;
 import com.jvmfrogsquad.ffsettings.utils.ManufacturerManager;
@@ -30,8 +29,7 @@ public class ManufacturerFragment extends Fragment {
                              Bundle savedInstanceState) {
         binding = FragmentManufacturerBinding.inflate(inflater, container, false);
         indicator = requireActivity().findViewById(R.id.progressIndicator);
-        manager = new ManufacturerManager();
-        manager.updateAdapterData(requireActivity());
+        manager = ManufacturerManager.getInstance();
         return binding.getRoot();
     }
 

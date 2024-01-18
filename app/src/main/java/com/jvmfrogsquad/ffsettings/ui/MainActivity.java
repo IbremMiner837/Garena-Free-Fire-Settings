@@ -1,9 +1,11 @@
 package com.jvmfrogsquad.ffsettings.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.ContextThemeWrapper;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewTreeObserver;
 import android.view.Window;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,22 +16,19 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.color.DynamicColors;
-import com.google.android.material.dialog.MaterialAlertDialogBuilder;
-
-import com.jvmfrogsquad.ffsettings.MyApplication;
 import com.jvmfrogsquad.ffsettings.R;
 import com.jvmfrogsquad.ffsettings.databinding.ActivityMainBinding;
+import com.jvmfrogsquad.ffsettings.utils.ManufacturerManager;
 import com.jvmfrogsquad.ffsettings.utils.SharedPreferencesUtils;
 
 public class MainActivity extends AppCompatActivity {
-
     private AppBarConfiguration appBarConfiguration;
+    private NavController navController;
     private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        MyApplication.instance.setNightMode();
         SplashScreen splashScreen = SplashScreen.installSplashScreen(this);
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         if (SharedPreferencesUtils.getBoolean(this, "useDynamicColors"))
@@ -39,16 +38,30 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         setSupportActionBar(binding.toolbar);
 
-        if (!SharedPreferencesUtils.getBoolean(this, "isFirstOpen")) {
-            MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(new ContextThemeWrapper(this, R.style.Theme_FFSettings_MaterialAlertDialog));
-            builder.setIcon(R.drawable.ic_round_insert_emoticon_24);
-            builder.setTitle(R.string.welcome);
-            builder.setMessage(R.string.welcome_message);
-            builder.setPositiveButton("OK", (dialog, which) -> SharedPreferencesUtils.saveBoolean(this, "isFirstOpen", true));
-            builder.show();
-        }
+        final View content = findViewById(android.R.id.content);
+        ManufacturerManager.getInstance().updateAdapterData(this);
+        content.getViewTreeObserver().addOnPreDrawListener(new ViewTreeObserver.OnPreDrawListener() {
+            @Override
+            public boolean onPreDraw() {
+                if (ManufacturerManager.getInstance().isReady()) {
+                    content.getViewTreeObserver().removeOnPreDrawListener(this);
 
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
+                    if (SharedPreferencesUtils.getBoolean(MainActivity.this, "isFirstOpen")) {
+                        return true;
+                    } else {
+                        // First open, navigate to another screen
+                        Intent intent = new Intent(MainActivity.this, WelcomeActivity.class);
+                        startActivity(intent);
+                        finish();
+                        return true;
+                    }
+                } else {
+                    return false;
+                }
+            }
+        });
+
+        navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupWithNavController(binding.bottomAppBar, navController);
         NavigationUI.setupWithNavController(binding.toolbar, navController, appBarConfiguration);

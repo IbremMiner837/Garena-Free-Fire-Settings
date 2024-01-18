@@ -3,25 +3,22 @@ package com.jvmfrogsquad.ffsettings.ui.fragment;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
 import com.jvmfrogsquad.ffsettings.BuildConfig;
-
 import com.jvmfrogsquad.ffsettings.R;
 import com.jvmfrogsquad.ffsettings.databinding.FragmentAboutAppBinding;
-import com.jvmfrogsquad.ffsettings.utils.CustomTabUtil;
 import com.jvmfrogsquad.ffsettings.utils.BugReportHelper;
+import com.jvmfrogsquad.ffsettings.utils.CustomTabUtil;
 import com.jvmfrogsquad.ffsettings.utils.OtherUtils;
 
 public class AboutAppFragment extends Fragment {
-
     private FragmentAboutAppBinding binding;
 
     @Override

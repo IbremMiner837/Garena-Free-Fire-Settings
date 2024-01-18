@@ -1,6 +1,11 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.Material3.DynamicColors.Dark">
+    
+    <style name="FFSettingsTheme" parent="BaseFFSettingsTheme">
+        <item name="toolbarStyle">@style/FFSettingsTheme.Widget.Toolbar</item>
+    </style>
+    
+    <style name="BaseFFSettingsTheme" parent="Theme.Material3.DynamicColors.Dark">
         <item name="colorPrimary">@color/md_theme_dark_primary</item>
         <item name="colorOnPrimary">@color/md_theme_dark_onPrimary</item>
         <item name="colorPrimaryContainer">@color/md_theme_dark_primaryContainer</item>
@@ -28,7 +33,7 @@
         <item name="colorSurfaceInverse">@color/md_theme_dark_inverseSurface</item>
         <item name="colorPrimaryInverse">@color/md_theme_dark_inversePrimary</item>
 
-        <item name="android:statusBarColor">@color/md_theme_dark_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 
     <style name="RedTheme" parent="Theme.Material3.DynamicColors.Dark">
@@ -62,18 +67,17 @@
         <item name="android:statusBarColor">@color/md_theme_dark_background</item>
     </style>
 
-    <style name="Theme.AppTheme.SplashScreen" parent="Theme.SplashScreen">
+    <style name="FFSettingsTheme.SplashScreen" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/md_theme_dark_background</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>
-        <item name="windowSplashScreenAnimationDuration">1000</item>
-        <item name="postSplashScreenTheme">@style/AppTheme</item>
+        <item name="postSplashScreenTheme">@style/FFSettingsTheme</item>
     </style>
 
-    <style name="Theme.FFSettings.MaterialAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+    <style name="FFSettingsTheme.MaterialAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
         <item name="android:tint">@color/md_theme_dark_onSurface</item>
     </style>
 
-    <style name="Theme.FFSettings.Toolbar" parent="Widget.Material3.Toolbar">
+    <style name="FFSettingsTheme.Widget.Toolbar" parent="Widget.Material3.Toolbar.Surface">
         <item name="iconTint">@color/md_theme_dark_onSurface</item>
         <item name="android:gravity">center_vertical</item>
     </style>

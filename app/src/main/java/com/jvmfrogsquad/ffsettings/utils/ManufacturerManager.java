@@ -30,6 +30,20 @@ public class ManufacturerManager {
     private static final String GITHUB_MANUFACTURERS_FILES_PATH = "https://raw.githubusercontent.com/IbremMiner837/Garena-Free-Fire-Settings/master/app/src/main/assets/sensitivity_settings/manufacturers.json";
     private final List<ManufacturersModel> manufacturersSet = new ArrayList<>();
     private final MutableLiveData<Boolean> isRequestFinished = new MutableLiveData<>();
+    private final MutableLiveData<Boolean> isReadyLiveData = new MutableLiveData<>();
+    private static ManufacturerManager instance;
+
+    // Private constructor to prevent instantiation from outside
+    private ManufacturerManager() {
+    }
+
+    // Public method to get the singleton instance
+    public static synchronized ManufacturerManager getInstance() {
+        if (instance == null) {
+            instance = new ManufacturerManager();
+        }
+        return instance;
+    }
 
     public List<ManufacturersModel> getManufacturersSet() {
         return manufacturersSet;
@@ -39,9 +53,18 @@ public class ManufacturerManager {
         return isRequestFinished;
     }
 
+    public MutableLiveData<Boolean> isReadyLiveData() {
+        return isReadyLiveData;
+    }
+
+    public boolean isReady() {
+        return isReadyLiveData.getValue() != null && isReadyLiveData.getValue();
+    }
+
     public void updateAdapterData(Context context) {
         if (manufacturersSet.isEmpty()) {
             isRequestFinished.setValue(false);
+            isReadyLiveData.setValue(false);
             try {
                 RequestQueue queue = Volley.newRequestQueue(context);
                 JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, GITHUB_MANUFACTURERS_FILES_PATH, null,
@@ -72,6 +95,8 @@ public class ManufacturerManager {
             Boolean isAvailable = jsonObject.getBoolean("isAvailable");
             manufacturersSet.add(new ManufacturersModel(name, model, showInProductionApp, isAvailable));
         }
+        isReadyLiveData.postValue(true);
+        isRequestFinished.postValue(true);
     }
 
     private RequestEventListener createRequestEventListener() {
@@ -81,11 +106,13 @@ public class ManufacturerManager {
                 case REQUEST_CACHE_LOOKUP_STARTED:
                 case REQUEST_NETWORK_DISPATCH_STARTED:
                     isRequestFinished.postValue(false);
+                    isReadyLiveData.postValue(false);
                     break;
                 case REQUEST_FINISHED:
                 case REQUEST_CACHE_LOOKUP_FINISHED:
                 case REQUEST_NETWORK_DISPATCH_FINISHED:
                     isRequestFinished.postValue(true);
+                    isReadyLiveData.postValue(true);
                     break;
                 default:
                     break;

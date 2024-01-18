@@ -5,17 +5,18 @@ import android.view.ContextThemeWrapper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
+
 import androidx.appcompat.app.AlertDialog;
+
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.textfield.TextInputEditText;
-
 import com.jvmfrogsquad.ffsettings.R;
 import com.jvmfrogsquad.ffsettings.utils.SharedPreferencesUtils;
 
 public class ChangeUsernameDialog {
 
     public static void showDialog(Activity activity) {
-        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(new ContextThemeWrapper(activity, R.style.Theme_FFSettings_MaterialAlertDialog));
+        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(new ContextThemeWrapper(activity, R.style.FFSettingsTheme_MaterialAlertDialog));
         LayoutInflater inflater = activity.getLayoutInflater();
         View dialogView = inflater.inflate(R.layout.change_user_name_layout, null);
 

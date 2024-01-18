@@ -1,12 +1,8 @@
-import android.content.Context;
-import android.content.res.Configuration;
-import android.content.res.Resources;
-import android.os.Build;
-import android.util.Log;
+package com.jvmfrogsquad.ffsettings.utils;
 
 public class ThemeUtils {
 
-    private static final String TAG = "ThemeUtils";
+    /*private static final String TAG = "ThemeUtils";
 
     public static void setTheme(Context context, int mode) {
         Resources resources = context.getResources();
@@ -80,8 +76,8 @@ public class ThemeUtils {
         View viewToAnimate = activity.findViewById(android.R.id.content);
 
         // Определите координаты центра анимации (где пользователь коснулся экрана)
-        int centerX = /* определите координату X */;
-        int centerY = /* определите координату Y */;
+        int centerX = // определите координату X;
+        int centerY = // определите координату Y;
 
         // Вычисляем радиус, который будет достаточно большим, чтобы покрыть весь экран
         int startRadius = 0;
@@ -118,8 +114,8 @@ public class ThemeUtils {
         View viewToAnimate = activity.findViewById(android.R.id.content);
 
         // Определите координаты центра анимации (где пользователь коснулся экрана)
-        int centerX = /* определите координату X */;
-        int centerY = /* определите координату Y */;
+        int centerX = // определите координату X;
+        int centerY = // определите координату Y;
 
         // Вычисляем радиус, который будет достаточно большим, чтобы покрыть весь экран
         int startRadius = 0;
@@ -164,5 +160,5 @@ public class ThemeUtils {
         } else {
             return false;
         }
-    }
+    }*/
 }

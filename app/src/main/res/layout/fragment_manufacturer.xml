@@ -11,7 +11,7 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/setUserNameBtn"
-        style="@style/Widget.Material3.CardView.Outlined"
+        style="@style/Widget.Material3.CardView.Elevated"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:clickable="true"
@@ -22,14 +22,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="8dp"
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="64dp"
-                android:layout_height="64dp"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
                 android:src="@drawable/person"
                 android:layout_gravity="center_vertical"
-                android:padding="8dp"
                 android:contentDescription="@string/welcome"/>
 
             <com.google.android.material.textview.MaterialTextView
@@ -39,12 +39,15 @@
                 android:layout_gravity="center|center_horizontal|center_vertical"
                 android:padding="6dp"
                 android:text="@string/welcome"
-                android:textSize="21sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 android:maxLines="2"/>
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
+
     <com.facebook.shimmer.ShimmerFrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/shimmer_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -118,6 +121,7 @@
                 android:layout_margin="6dp"/>
         </GridLayout>
     </com.facebook.shimmer.ShimmerFrameLayout>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recview"
         android:layout_width="match_parent"
@@ -137,7 +141,6 @@
             android:contentDescription="@string/dont_have_your_phone_model"
             android:text="@string/dont_have_your_phone_model"
             android:textSize="16sp"
-            android:textStyle="bold"
             style="@style/Widget.MaterialComponents.TextView"/>
 
         <com.google.android.material.textview.MaterialTextView
@@ -151,7 +154,6 @@
             android:singleLine="true"
             android:text="@string/then_click_here"
             android:textSize="16sp"
-            android:textStyle="bold"
             android:textColor="#FF559DEF"/>
     </LinearLayout>
 </LinearLayout>

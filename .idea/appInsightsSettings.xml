@@ -27,10 +27,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.jvmfrogsquad.ffsettings" />
+                  <option name="mobileSdkAppId" value="1:826628861908:android:5c1411d5c529243a1b7041" />
+                  <option name="projectId" value="ff-settings-app-39522" />
+                  <option name="projectNumber" value="826628861908" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

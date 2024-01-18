@@ -45,4 +45,13 @@
         android:name="com.jvmfrogsquad.ffsettings.ui.fragment.SettingsFragment"
         android:label="@string/settings"
         tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.jvmfrogsquad.ffsettings.ui.fragment.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_manufacturerFragment2"
+            app:destination="@id/manufacturerFragment2" />
+    </fragment>
 </navigation>
