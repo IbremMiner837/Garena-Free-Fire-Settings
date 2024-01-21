@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     
     <style name="FFSettingsTheme" parent="BaseFFSettingsTheme">
@@ -69,17 +69,21 @@
 
     <style name="FFSettingsTheme.SplashScreen" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/md_theme_dark_background</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/animated_logo</item>
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <item name="windowSplashScreenIconBackgroundColor">@color/md_theme_light_background</item>
         <item name="postSplashScreenTheme">@style/FFSettingsTheme</item>
+        <item name="android:windowSplashScreenBrandingImage" tools:ignore="NewApi">@drawable/ic_splashscreen_branding_centered</item>
     </style>
 
     <style name="FFSettingsTheme.MaterialAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
         <item name="android:tint">@color/md_theme_dark_onSurface</item>
     </style>
 
-    <style name="FFSettingsTheme.Widget.Toolbar" parent="Widget.Material3.Toolbar.Surface">
+    <style name="FFSettingsTheme.Widget.Toolbar" parent="Widget.Material3.Toolbar">
         <item name="iconTint">@color/md_theme_dark_onSurface</item>
         <item name="android:gravity">center_vertical</item>
+        <item name="windowActionModeOverlay">true</item>
     </style>
 
 </resources>

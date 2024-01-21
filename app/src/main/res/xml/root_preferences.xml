@@ -1,36 +1,33 @@
-<PreferenceScreen
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <PreferenceCategory app:title="@string/messages_header">
+    <PreferenceCategory
+        android:title="Персонализация">
 
-        <EditTextPreference
-            app:key="signature"
-            app:title="@string/signature_title"
-            app:useSimpleSummaryProvider="true" />
+        <PreferenceScreen
+            android:key="radio_group_key"
+            android:title="Режим цветов">
 
-        <ListPreference
-            app:defaultValue="reply"
-            app:entries="@array/reply_entries"
-            app:entryValues="@array/reply_values"
-            app:key="reply"
-            app:title="@string/reply_title"
-            app:useSimpleSummaryProvider="true" />
+            <ListPreference
+                android:key="color_mode"
+                android:title="Выберите режим"
+                android:summary="Режим цветов для приложения"
+                android:dialogTitle="Выберите режим"
+                android:entries="@array/darkModeEntries"
+                android:entryValues="@array/darkModeEntries_values"
+                android:defaultValue="system" />
 
-    </PreferenceCategory>
+            <CheckBoxPreference
+                android:title="@string/welcome"
+                app:defaultValue="true"/>
 
-    <PreferenceCategory app:title="@string/sync_header">
+        </PreferenceScreen>
 
-        <SwitchPreferenceCompat
-            app:key="sync"
-            app:title="@string/sync_title" />
-
-        <SwitchPreferenceCompat
-            app:dependency="sync"
-            app:key="attachment"
-            app:summaryOff="@string/attachment_summary_off"
-            app:summaryOn="@string/attachment_summary_on"
-            app:title="@string/attachment_title" />
+        <SwitchPreference
+            android:key="dynamic_colors"
+            android:title="Dynamic Colors"
+            android:summary="Включить динамические цвета"
+            android:defaultValue="false" />
 
     </PreferenceCategory>
-
 </PreferenceScreen>

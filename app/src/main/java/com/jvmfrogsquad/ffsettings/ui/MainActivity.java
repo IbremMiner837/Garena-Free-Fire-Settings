@@ -49,10 +49,9 @@ public class MainActivity extends AppCompatActivity {
                     if (SharedPreferencesUtils.getBoolean(MainActivity.this, "isFirstOpen")) {
                         return true;
                     } else {
-                        // First open, navigate to another screen
                         Intent intent = new Intent(MainActivity.this, WelcomeActivity.class);
+                        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                         startActivity(intent);
-                        finish();
                         return true;
                     }
                 } else {

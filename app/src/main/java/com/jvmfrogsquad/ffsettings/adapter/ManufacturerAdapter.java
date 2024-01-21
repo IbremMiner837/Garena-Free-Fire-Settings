@@ -19,7 +19,6 @@ import java.util.List;
 import java.util.Locale;
 
 public class ManufacturerAdapter extends RecyclerView.Adapter<ManufacturerAdapter.ManufacturersHolder> {
-
     private final Fragment fragment;
     private final List<ManufacturersModel> models;
 

@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 public class SharedPreferencesUtils {
-    public static void saveBoolean(Context context, String key, boolean value) {
+    public static void writeBoolean(Context context, String key, boolean value) {
         SharedPreferences prefs = context.getSharedPreferences("app_config", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = prefs.edit();
         editor.putBoolean(key, value);
@@ -21,7 +21,7 @@ public class SharedPreferencesUtils {
         return prefs.getBoolean(key, defaultValue);
     }
 
-    public static void saveInteger(Context context, String key, int value) {
+    public static void writeInteger(Context context, String key, int value) {
         SharedPreferences prefs = context.getSharedPreferences("app_config", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = prefs.edit();
         editor.putInt(key, value);
@@ -38,7 +38,7 @@ public class SharedPreferencesUtils {
         return prefs.getInt(key, defaultValue);
     }
 
-    public static void saveString(Context context, String key, String value) {
+    public static void writeString(Context context, String key, String value) {
         SharedPreferences prefs = context.getSharedPreferences("app_config", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = prefs.edit();
         editor.putString(key, value);

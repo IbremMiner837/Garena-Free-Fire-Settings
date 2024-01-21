@@ -23,7 +23,7 @@ public class WelcomeFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentWelcomeBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
@@ -33,9 +33,11 @@ public class WelcomeFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         binding.startBtn.setOnClickListener(v -> {
-            SharedPreferencesUtils.saveBoolean(requireActivity(), "isFirstOpen", true);
+            SharedPreferencesUtils.writeBoolean(requireActivity(), "isFirstOpen", true);
             Intent intent = new Intent(requireActivity(), MainActivity.class);
+            requireActivity().overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             startActivity(intent);
+            requireActivity().finish();
         });
     }
 

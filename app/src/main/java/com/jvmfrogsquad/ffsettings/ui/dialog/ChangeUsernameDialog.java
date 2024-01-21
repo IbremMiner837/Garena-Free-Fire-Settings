@@ -28,7 +28,7 @@ public class ChangeUsernameDialog {
         TextView username = activity.findViewById(R.id.welcome_and_user_name);
 
         builder.setPositiveButton(R.string.save, (dialog, which) -> {
-            SharedPreferencesUtils.saveString(activity, "user_name", usernameInput.getText().toString());
+            SharedPreferencesUtils.writeString(activity, "user_name", usernameInput.getText().toString());
             username.setText(activity.getString(R.string.welcome) + "," + "\n" + usernameInput.getText().toString() + "!");
         });
 

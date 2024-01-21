@@ -19,7 +19,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="8dp"
+            android:padding="16dp"
             android:orientation="vertical">
 
             <LinearLayout
@@ -28,10 +28,10 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
                     android:padding="8dp"
-                    android:src="@drawable/ic_launcher_round"/>
+                    android:src="@drawable/logo"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -117,7 +117,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="8dp"
+            android:padding="16dp"
             android:orientation="vertical">
 
             <com.google.android.material.button.MaterialButton

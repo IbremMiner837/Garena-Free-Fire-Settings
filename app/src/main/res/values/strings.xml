@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FF Settings</string>
+    <string name="app_name" translatable="false">FF Settings App</string>
     <string name="fake_app_name">FF Settings</string>
 
     <string name="welcome">Welcome</string>

@@ -20,7 +20,8 @@
             android:layout_height="?attr/actionBarSize"
             app:layout_scrollFlags="scroll|enterAlways|snap"
             app:title="@string/app_name"
-            app:menu="@menu/top_app_bar_menu"/>
+            app:menu="@menu/top_app_bar_menu"
+            android:theme="@style/FFSettingsTheme.Widget.Toolbar"/>
         <com.google.android.material.progressindicator.LinearProgressIndicator
             android:id="@+id/progressIndicator"
             android:layout_width="match_parent"
