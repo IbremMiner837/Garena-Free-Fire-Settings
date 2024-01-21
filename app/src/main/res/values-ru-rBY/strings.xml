@@ -3,6 +3,11 @@
     <string name="app_name">Настройкі для Free Fire</string>
     <string name="fake_app_name">Налады для FF</string>
 
+    <string name="welcome_screen_title">Сардэчна запрашаем у наш прыклад!</string>
+    <string name="welcome_screen_message">Прывітанне, Баявы! Тут кожны знойдзе наладу для сябе, ў адсутнасці гэтага можна папрасіць.</string>
+    <!--string name="privacy_policy_message">Прадоўжуючы, вы прымаеце нашы Ўмовы абслугоўвання і патвяржаеце, што вы прачыталі нашую Палітыку прыватнасці.</string-->
+    <string name="continue_button">Працягнуць</string>
+
     <string name="welcome">Сардэчна запрашаем</string>
     <string name="user_name">Імя карыстальніка</string>
     <string name="enter_user_name">Увядзіце імя карыстальніка</string>

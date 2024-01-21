@@ -3,6 +3,11 @@
     <string name="app_name">Serbest Ateş Ayarları</string>
     <string name="fake_app_name">FF Ayarları</string>
 
+    <string name="welcome_screen_title">Uygulamamıza Hoş Geldiniz!</string>
+    <string name="welcome_screen_message">Merhaba Savaşçı! Herkes burada kendisi için bir ayarı bulacak, aksi takdirde talep edebilirsiniz.</string>
+    <!--string name="privacy_policy_message">Devam ederek, Hizmet Şartlarımızı kabul ediyor ve Gizlilik Politikamızı okuduğunuzu onaylıyorsunuz.</string-->
+    <string name="continue_button">Devam</string>
+
     <string name="welcome">Hoş geldin</string>
     <string name="user_name">Kullanıcı adı</string>
     <string name="enter_user_name">Kullanıcı adı girin</string>

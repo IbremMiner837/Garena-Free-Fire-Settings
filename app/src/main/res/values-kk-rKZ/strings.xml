@@ -3,6 +3,11 @@
     <string name="app_name">Free Fire үшін параметрлер</string>
     <string name="fake_app_name">FF үшін параметрлер</string>
 
+    <string name="welcome_screen_title">Біздің қосымшамызға қош келдіңіз!</string>
+    <string name="welcome_screen_message">Сәлем, Салушы! Барлығы бұл жерде өзіне көмек көрсете отырады, басқа жақсы емесі келгенін сұрау қылуыңыз болады.</string>
+    <!--string name="privacy_policy_message">Жалғастырып жататып, Сервистік Шарттарымызды қабылдау және Құпиялылық саясатымызды оқыдыңызды растау жасауыңызды растауыз.</string-->
+    <string name="continue_button">Жалғастыру</string>
+
     <string name="welcome">Қош келдіңіз</string>
     <string name="user_name">Пайдаланушы аты</string>
     <string name="enter_user_name">Пайдаланушы атын енгізіңіз</string>

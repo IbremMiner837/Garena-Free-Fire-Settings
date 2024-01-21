@@ -3,6 +3,11 @@
     <string name="app_name">Настройки для Free Fire</string>
     <string name="fake_app_name">Настройки для FF</string>
 
+    <string name="welcome_screen_title">Добро пожаловать в наше приложение!</string>
+    <string name="welcome_screen_message">Привет, Боец! Здесь каждый найдет настройку для себя, в противном случае их можно запросить.</string>
+    <!--string name="privacy_policy_message">Продолжая, вы принимаете наши Условия обслуживания и подтверждаете, что прочитали нашу Политику конфиденциальности.</string-->
+    <string name="continue_button">Продолжить</string>
+
     <string name="welcome">Добро Пожаловать</string>
     <string name="user_name">Имя пользователя</string>
     <string name="enter_user_name">Введите Имя пользователя</string>

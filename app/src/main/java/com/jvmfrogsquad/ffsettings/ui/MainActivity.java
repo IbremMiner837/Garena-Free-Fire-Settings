@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent = new Intent(MainActivity.this, WelcomeActivity.class);
                         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                         startActivity(intent);
+                        finish();
                         return true;
                     }
                 } else {

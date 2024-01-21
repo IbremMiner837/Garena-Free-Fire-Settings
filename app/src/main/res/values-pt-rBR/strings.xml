@@ -3,6 +3,12 @@
     <string name="app_name">Configurações do Free Fire</string>
     <string name="fake_app_name">Configurações para FF</string>
 
+    <string name="welcome_screen_title">Bem-vindo ao nosso aplicativo!</string>
+    <string name="welcome_screen_message">Olá, Lutador! Aqui cada um encontrará uma configuração para si mesmo, caso contrário, você pode solicitá-las.</string>
+    <!--string name="privacy_policy_message">Ao continuar, você aceita nossos Termos de Serviço e reconhece que leu nossa Política de Privacidade.</string-->
+    <string name="continue_button">Continuar</string>
+
+
     <string name="welcome">Bem-vindo</string>
     <string name="user_name">Nome de usuário</string>
     <string name="enter_user_name">Insira nome de usuário</string>
