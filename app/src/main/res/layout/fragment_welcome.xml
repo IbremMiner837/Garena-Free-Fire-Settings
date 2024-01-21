@@ -24,39 +24,56 @@
         android:id="@+id/welcome_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="8dp"
         android:gravity="center"
         android:padding="8dp"
-        android:text="@string/welcome_to_our_app"
+        android:text="@string/welcome_screen_title"
         android:textSize="21sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo" />
+        app:layout_constraintTop_toBottomOf="@+id/logo"/>
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/welcome_text"
+        android:id="@+id/welcome_message"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginHorizontal="16dp"
+        android:gravity="center"
         android:padding="8dp"
-        android:text="@string/welcome_message"
+        android:text="@string/welcome_screen_message"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcome_title" />
+        app:layout_constraintTop_toBottomOf="@+id/welcome_title"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/startBtn"
         style="@style/Widget.Material3.Button.TonalButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="24dp"
         android:paddingVertical="16dp"
-        android:text="Start Using!"
+        android:text="@string/continue_button"
         android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcome_text" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.905"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/terms_use_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/privacy_policy_message"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startBtn"
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

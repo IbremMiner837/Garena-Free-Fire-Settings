@@ -2,6 +2,11 @@
     <string name="app_name" translatable="false">FF Settings App</string>
     <string name="fake_app_name">FF Settings</string>
 
+    <string name="welcome_screen_title">Welcome to FF Settings App!</string>
+    <string name="welcome_screen_message">Here, everyone will find a setting for themselves! However, before proceeding, it is necessary to grant some permissions for the proper functioning of the application.</string>
+    <string name="privacy_policy_message">Continuing, you accept our Terms of Service and acknowledge that you have read our Privacy Policy.</string>
+    <string name="continue_button">Continue</string>
+
     <string name="welcome">Welcome</string>
     <string name="welcome_to_our_app">Welcome to our application!</string>
     <string name="user_name">Username</string>
