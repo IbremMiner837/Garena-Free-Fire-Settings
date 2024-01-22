@@ -41,7 +41,7 @@
     <string name="free_review">Free Look</string>
     <string name="dpi">DPI</string>
     <string name="fire_button">Fire Button</string>
-    <string name="source">Source:</string>
+    <string name="source">Source</string>
 
     <string name="dont_have_your_phone_model">Don\'t have your phone model?</string>
     <string name="then_click_here">Then click here</string>
@@ -88,20 +88,4 @@
     <string name="dynamic_colors_are_not_supported">Dynamic colors are not supported</string>
     <string name="devices_list">Devices list</string>
     <string name="sensitivity">Sensitivity</string>
-    <!-- Preference Titles -->
-    <string name="messages_header">Messages</string>
-    <string name="sync_header">Sync</string>
-
-    <!-- Messages Preferences -->
-    <string name="signature_title">Your signature</string>
-    <string name="reply_title">Default reply action</string>
-
-    <!-- Sync Preferences -->
-    <string name="sync_title">Sync email periodically</string>
-    <string name="attachment_title">Download incoming attachments</string>
-    <string name="attachment_summary_on">Automatically download attachments for incoming emails
-    </string>
-    <string name="attachment_summary_off">Only download attachments when manually requested</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

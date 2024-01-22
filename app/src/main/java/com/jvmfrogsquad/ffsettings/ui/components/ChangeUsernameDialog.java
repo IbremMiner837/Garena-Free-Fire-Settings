@@ -1,4 +1,4 @@
-package com.jvmfrogsquad.ffsettings.ui.dialog;
+package com.jvmfrogsquad.ffsettings.ui.components;
 
 import android.app.Activity;
 import android.view.ContextThemeWrapper;

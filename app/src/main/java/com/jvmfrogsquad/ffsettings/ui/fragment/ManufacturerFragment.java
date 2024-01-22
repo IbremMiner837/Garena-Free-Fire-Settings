@@ -14,7 +14,7 @@ import com.google.android.material.progressindicator.LinearProgressIndicator;
 import com.jvmfrogsquad.ffsettings.R;
 import com.jvmfrogsquad.ffsettings.adapter.ManufacturerAdapter;
 import com.jvmfrogsquad.ffsettings.databinding.FragmentManufacturerBinding;
-import com.jvmfrogsquad.ffsettings.ui.dialog.ChangeUsernameDialog;
+import com.jvmfrogsquad.ffsettings.ui.components.ChangeUsernameDialog;
 import com.jvmfrogsquad.ffsettings.utils.CustomTabUtil;
 import com.jvmfrogsquad.ffsettings.utils.ManufacturerManager;
 import com.jvmfrogsquad.ffsettings.utils.SharedPreferencesUtils;

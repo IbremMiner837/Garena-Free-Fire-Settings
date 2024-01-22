@@ -1,6 +1,8 @@
 package com.jvmfrogsquad.ffsettings.ui.fragment;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,7 +15,6 @@ import androidx.fragment.app.Fragment;
 
 import com.jvmfrogsquad.ffsettings.R;
 import com.jvmfrogsquad.ffsettings.databinding.FragmentDeviceSettingsBinding;
-
 import com.jvmfrogsquad.ffsettings.utils.OtherUtils;
 
 public class DeviceSettingsFragment extends Fragment {
@@ -49,40 +50,23 @@ public class DeviceSettingsFragment extends Fragment {
         }
 
 
-        binding.textViewReview.setText(getString(R.string.review) + ":" + " " + (int) finalBundle.getFloat("review"));
-        binding.sliderReview.setValue(finalBundle.getFloat("review"));
-        binding.textViewCollimator.setText(getString(R.string.collimator) + ":" + " " + (int) finalBundle.getFloat("collimator"));
-        binding.sliderCollimator.setValue(finalBundle.getFloat("collimator"));
-        binding.textViewX2Scope.setText(getString(R.string.x2_scope) + ":" + " " + (int) finalBundle.getFloat("x2_scope"));
-        binding.sliderX2Scope.setValue(finalBundle.getFloat("x2_scope"));
-        binding.textViewX4Scope.setText(getString(R.string.x4_scope) + ":" + " " + (int) finalBundle.getFloat("x4_scope"));
-        binding.sliderX4Scope.setValue(finalBundle.getFloat("x4_scope"));
-        binding.textViewSniperScope.setText(getString(R.string.sniper_scope) + ":" + " " + (int) finalBundle.getFloat("sniper_scope"));
-        binding.sliderSniperScope.setValue(finalBundle.getFloat("sniper_scope"));
-        binding.textViewFreeReview.setText(getString(R.string.free_review) + ":" + " " + (int) finalBundle.getFloat("free_review"));
-        binding.sliderFreeReview.setValue(finalBundle.getFloat("free_review"));
-        binding.textViewFireButton.setText(getString(R.string.fire_button) + ":" + " " + (int) finalBundle.getFloat("fire_button"));
-        binding.sliderFireButton.setValue(finalBundle.getFloat("fire_button"));
+        binding.reviewSlider.setValue((float) finalBundle.getFloat("review"));
+        binding.collimatorSlider.setValue((float) finalBundle.getFloat("collimator"));
+        binding.x2ScopeSlider.setValue((float) finalBundle.getFloat("x2_scope"));
+        binding.x4ScopeSlider.setValue((float) finalBundle.getFloat("x4_scope"));
+        binding.sniperScope.setValue((float) finalBundle.getFloat("sniper_scope"));
+        binding.freeLookSlider.setValue((float) finalBundle.getFloat("free_review"));
+        binding.fireButtonSlider.setValue((float) finalBundle.getFloat("fire_button"));
 
-        if (finalBundle.getString("settings_source_url") == null || finalBundle.getString("settings_source_url").equals("null") || finalBundle.getString("settings_source_url").equals("")) {
-            binding.textViewSettingsSourceUrl.setVisibility(View.GONE);
-            binding.textViewSource.setVisibility(View.GONE);
-        } else {
-            binding.textViewSettingsSourceUrl.setText(finalBundle.getString("settings_source_url"));
-        }
+        if (finalBundle.getString("settings_source_url") == null || finalBundle.getString("settings_source_url").equals("null") || finalBundle.getString("settings_source_url").equals(""))
+            binding.sourceButton.setVisibility(View.GONE);
 
-        binding.textViewDPI.setContentDescription(getString(R.string.dpi) + ":" + " " + (int) finalBundle.getFloat("dpi"));
-        binding.textViewReview.setContentDescription(getString(R.string.review) + ":" + " " + (int) finalBundle.getFloat("review"));
-        binding.textViewCollimator.setContentDescription(getString(R.string.collimator) + ":" + " " + (int) finalBundle.getFloat("collimator"));
-        binding.textViewX2Scope.setContentDescription(getString(R.string.x2_scope) + ":" + " " + (int) finalBundle.getFloat("x2_scope"));
-        binding.textViewX4Scope.setContentDescription(getString(R.string.x4_scope) + ":" + " " + (int) finalBundle.getFloat("x4_scope"));
-        binding.textViewSniperScope.setContentDescription(getString(R.string.sniper_scope) + ":" + " " + (int) finalBundle.getFloat("sniper_scope"));
-        binding.textViewFreeReview.setContentDescription(getString(R.string.free_review) + ":" + " " + (int) finalBundle.getFloat("free_review"));
-        binding.textViewFireButton.setContentDescription(getString(R.string.fire_button) + ":" + " " + (int) finalBundle.getFloat("fire_button"));
-        binding.textViewSettingsSourceUrl.setContentDescription(finalBundle.getString("settings_source_url"));
+        binding.sourceButton.setOnClickListener(v -> {
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(finalBundle.getString("settings_source_url")));
+            requireActivity().startActivity(intent);
+        });
 
         binding.copyButton.setOnClickListener(view1 -> {
-
             try {
                 new OtherUtils(getActivity()).copyTextToClipboard(getString(R.string.dpi) + ":" + " " + dpi + "\n" +
                                 getString(R.string.review) + ":" + " " + (int) finalBundle.getFloat("review") + "\n" +
