@@ -9,10 +9,10 @@ android {
 
     defaultConfig {
         applicationId "com.jvmfrogsquad.ffsettings"
-        minSdk 23
+        minSdk 27
         targetSdk 34
-        versionCode 26
-        versionName "v1.4.0"
+        versionCode 1
+        versionName "v2.0.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

@@ -103,6 +103,7 @@
                 app:iconPadding="16dp"
                 app:iconSize="24dp"
                 android:textAlignment="textStart"
+                android:visibility="gone"
                 style="@style/Widget.Material3.Button.TextButton"/>
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
@@ -168,6 +169,7 @@
                 app:iconTintMode="screen"
                 app:iconTint="#00ffffff"
                 android:textAlignment="textStart"
+                android:visibility="gone"
                 style="@style/Widget.Material3.Button.TextButton"/>
 
             <com.google.android.material.button.MaterialButton
@@ -182,6 +184,7 @@
                 app:iconTintMode="screen"
                 app:iconTint="#00ffffff"
                 android:textAlignment="textStart"
+                android:visibility="gone"
                 style="@style/Widget.Material3.Button.TextButton"/>
 
             <com.google.android.material.button.MaterialButton

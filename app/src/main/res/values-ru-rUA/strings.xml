@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Налаштування для Free Fire</string>
-    <string name="fake_app_name">Налаштування для FF</string>
-
     <string name="welcome_screen_title">Ласкаво просимо до нашого додатку!</string>
     <string name="welcome_screen_message">Привіт, Бійцю! Тут кожен знайде налаштування для себе, в іншому випадку їх можна запросити.</string>
     <!--string name="privacy_policy_message">Продовжуючи, ви приймаєте наші Умови обслуговування і визнаєте, що прочитали нашу Політику конфіденційності.</string-->
+    <string name="privacy_policy">Політика конфіденційності</string>
+    <string name="terms_of_service">Умови використання</string>
     <string name="continue_button">Продовжити</string>
 
     <string name="welcome">Ласкаво просимо</string>

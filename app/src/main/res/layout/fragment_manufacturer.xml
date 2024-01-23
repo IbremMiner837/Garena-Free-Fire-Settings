@@ -145,7 +145,6 @@
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/googleFormBtn"
-            style="@style/Widget.MaterialComponents.TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
@@ -154,6 +153,7 @@
             android:singleLine="true"
             android:text="@string/then_click_here"
             android:textSize="16sp"
-            android:textColor="#FF559DEF"/>
+            android:textColor="#FF559DEF"
+            style="@style/Widget.MaterialComponents.TextView"/>
     </LinearLayout>
 </LinearLayout>

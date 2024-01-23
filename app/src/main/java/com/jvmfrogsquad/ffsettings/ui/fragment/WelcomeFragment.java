@@ -2,6 +2,7 @@ package com.jvmfrogsquad.ffsettings.ui.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.method.LinkMovementMethod;
@@ -14,9 +15,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.jvmfrogsquad.ffsettings.R;
 import com.jvmfrogsquad.ffsettings.databinding.FragmentWelcomeBinding;
 import com.jvmfrogsquad.ffsettings.ui.MainActivity;
+import com.jvmfrogsquad.ffsettings.utils.OtherUtils;
 import com.jvmfrogsquad.ffsettings.utils.SharedPreferencesUtils;
 
 public class WelcomeFragment extends Fragment {
@@ -38,7 +41,6 @@ public class WelcomeFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         String message = getString(R.string.privacy_policy_message);
-
         SpannableString spannableString = new SpannableString(message);
 
         int termsStart = message.indexOf("Terms of Service");
@@ -50,23 +52,30 @@ public class WelcomeFragment extends Fragment {
         ClickableSpan termsClickableSpan = new ClickableSpan() {
             @Override
             public void onClick(@NonNull View widget) {
-                // Обработка клика по "Terms of Service"
-                // Добавьте свой код обработки события
+                new MaterialAlertDialogBuilder(requireContext())
+                        .setIcon(R.drawable.ic_round_gpp_maybe_24px)
+                        .setTitle(R.string.privacy_policy)
+                        .setMessage(Html.fromHtml(new OtherUtils(requireContext()).readFileFromAssets("terms_condition.html"), Html.FROM_HTML_MODE_LEGACY))
+                        .setPositiveButton("OK", null)
+                        .create().show();
             }
         };
 
         ClickableSpan privacyPolicyClickableSpan = new ClickableSpan() {
             @Override
             public void onClick(@NonNull View widget) {
-                // Обработка клика по "Privacy Policy"
-                // Добавьте свой код обработки события
+                new MaterialAlertDialogBuilder(requireContext())
+                        .setIcon(R.drawable.ic_round_gpp_maybe_24px)
+                        .setTitle(R.string.privacy_policy)
+                        .setMessage(Html.fromHtml(new OtherUtils(requireContext()).readFileFromAssets("privacy_policy.html"), Html.FROM_HTML_MODE_LEGACY))
+                        .setPositiveButton("OK", null)
+                        .create().show();
             }
         };
 
         spannableString.setSpan(termsClickableSpan, termsStart, termsEnd, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
         spannableString.setSpan(privacyPolicyClickableSpan, privacyPolicyStart, privacyPolicyEnd, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
 
-        // Установка SpannableString в TextView
         binding.termsUseMessage.setText(spannableString);
         binding.termsUseMessage.setMovementMethod(LinkMovementMethod.getInstance());
 
