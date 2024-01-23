@@ -26,7 +26,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SensitivitiesManager {
-    public static String GITHUB_SENSITIVITIES_FILES_PATH = "https://raw.githubusercontent.com/IbremMiner837/Garena-Free-Fire-Settings/master/app/src/main/assets/sensitivity_settings/";
+    public static String GITHUB_SENSITIVITIES_FILES_PATH = "https://raw.githubusercontent.com/Ibragim837/Garena-Free-Fire-Settings/master/app/src/main/assets/sensitivity_settings/";
     private final List<SensitivityModel> sensitivitiesSet = new ArrayList<>();
     private final MutableLiveData<Boolean> isRequestFinished = new MutableLiveData<>();
 

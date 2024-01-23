@@ -27,7 +27,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ManufacturerManager {
-    private static final String GITHUB_MANUFACTURERS_FILES_PATH = "https://raw.githubusercontent.com/IbremMiner837/Garena-Free-Fire-Settings/master/app/src/main/assets/sensitivity_settings/manufacturers.json";
+    private static final String GITHUB_MANUFACTURERS_FILES_PATH = "https://raw.githubusercontent.com/Ibragim837/Garena-Free-Fire-Settings/master/app/src/main/assets/sensitivity_settings/manufacturers.json";
     private final List<ManufacturersModel> manufacturersSet = new ArrayList<>();
     private final MutableLiveData<Boolean> isRequestFinished = new MutableLiveData<>();
     private final MutableLiveData<Boolean> isReadyLiveData = new MutableLiveData<>();
