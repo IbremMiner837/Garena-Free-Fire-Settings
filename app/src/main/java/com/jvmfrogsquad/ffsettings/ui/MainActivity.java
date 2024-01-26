@@ -2,12 +2,12 @@ package com.jvmfrogsquad.ffsettings.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.view.Window;
-import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.splashscreen.SplashScreen;
@@ -16,16 +16,25 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import com.google.android.gms.ads.MobileAds;
 import com.google.android.material.color.DynamicColors;
+import com.jvmfrogsquad.ffsettings.MyApplication;
 import com.jvmfrogsquad.ffsettings.R;
+import com.jvmfrogsquad.ffsettings.ads.UserMessagePlatformManager;
 import com.jvmfrogsquad.ffsettings.databinding.ActivityMainBinding;
 import com.jvmfrogsquad.ffsettings.utils.ManufacturerManager;
 import com.jvmfrogsquad.ffsettings.utils.SharedPreferencesUtils;
+
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration appBarConfiguration;
     private NavController navController;
     private ActivityMainBinding binding;
+
+    private static final String LOG_TAG = "SplashActivity";
+    private final AtomicBoolean isMobileAdsInitializeCalled = new AtomicBoolean(false);
+    private UserMessagePlatformManager googleMobileAdsConsentManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +71,22 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        googleMobileAdsConsentManager = UserMessagePlatformManager.getInstance(getApplicationContext());
+        googleMobileAdsConsentManager.gatherConsent(this,
+                consentError -> {
+                    if (consentError != null) {
+                        Log.w(LOG_TAG, String.format("%s: %s", consentError.getErrorCode(), consentError.getMessage()));
+                    }
+
+                    if (googleMobileAdsConsentManager.canRequestAds()) {
+                        initializeMobileAdsSdk();
+                    }
+                });
+
+        if (googleMobileAdsConsentManager.canRequestAds()) {
+            initializeMobileAdsSdk();
+        }
+
         navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupWithNavController(binding.bottomAppBar, navController);
@@ -96,13 +121,26 @@ public class MainActivity extends AppCompatActivity {
                 || super.onSupportNavigateUp();
     }
 
-    private void changeStatusBarColor(int color) {
-        Window window = getWindow();
+    private void initializeMobileAdsSdk() {
+        if (isMobileAdsInitializeCalled.getAndSet(true)) {
+            return;
+        }
 
-        // Enable the status bar to be drawn in full screen
-        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        MobileAds.initialize(this);
 
-        // Set the color of the status bar
-        window.setStatusBarColor(color);
+        if (!SharedPreferencesUtils.getBoolean(this, "isFirstOpen")) {
+            MyApplication application = (MyApplication) getApplication();
+            application.loadAd(this, new MyApplication.OnAdLoadListener() {
+                @Override
+                public void onAdLoaded() {
+                    application.showAdIfAvailable(MainActivity.this, null);
+                }
+
+                @Override
+                public void onAdFailedToLoad() {
+                    application.loadAd(MainActivity.this, null);
+                }
+            });
+        }
     }
 }

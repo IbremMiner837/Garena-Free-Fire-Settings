@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <defaultsMap>
     <entry>
-        <key>in_app_update_type</key>
-        <value>flexible</value>
+        <key>admob_app_id</key>
+        <value>ca-app-pub-3943668970239539~3707627327</value>
+    </entry>
+    <entry>
+        <key>app_open_ad_id</key>
+        <value>ca-app-pub-3943668970239539/2696167674</value>
+    </entry>
+    <entry>
+        <key>banner_ad_id</key>
+        <value>ca-app-pub-3943668970239539/9271779349</value>
     </entry>
 </defaultsMap>

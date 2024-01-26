@@ -18,6 +18,11 @@
         android:supportsRtl="true"
         android:theme="@style/FFSettingsTheme"
         tools:targetApi="34">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3943668970239539~3707627327"/>
+
         <activity
             android:name=".ui.WelcomeActivity"
             android:exported="false" />
