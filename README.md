@@ -8,10 +8,10 @@
   <a href="https://github.com/IbremMiner837/Garena-Free-Fire-Settings" style="text-decoration:none" area-label="Android">
     <img src="https://img.shields.io/badge/Platform-Android-green.svg">
   </a>
-  <a href="https://github.com/IbremMiner837/Garena-Free-Fire-Settings" style="text-decoration:none" area-label="Min API: 23">
-    <img src="https://img.shields.io/badge/minSdkVersion-23-green.svg">
+  <a href="https://github.com/IbremMiner837/Garena-Free-Fire-Settings" style="text-decoration:none" area-label="Min API: 27">
+    <img src="https://img.shields.io/badge/minSdkVersion-27-green.svg">
   </a>
-  <a href="https://play.google.com/store/apps/details?id=studio.jvmfrog.ffsettings" style="text-decoration:none" area-label="Play Store">
+  <a href="https://play.google.com/store/apps/details?id=com.jvmfrogsquad.ffsettings" style="text-decoration:none" area-label="Play Store">
     <img src="https://img.shields.io/badge/Download-Google_Play-green.svg">
   </a>
   <a href="https://github.com/IbremMiner837/Garena-Free-Fire-Settings/blob/master/LICENSE.md" style="text-decoration:none" area-label="License: GPL v3">
@@ -26,7 +26,7 @@ ___
 
 ## 🆕 Material You Design is supported in the application.
 
-## ⚠ Subscribe to our [official Telegram channel](https://telegram.me/freefiresettingsapp) to stay updated on the latest events.
+## ⚠ Subscribe to our [official Telegram channel](https://telegram.me/free_fire_settings_app) to stay updated on the latest events.
 ___
 
 ## 📱 Screenshots
@@ -58,10 +58,10 @@ In any case, you find or notice any bugs please report them by creating an issue
 If you have any feature suggestions, please create an issue with detailed information or by contacting us in the [Telegram help & Feedback group](https://t.me/freefiresettingsapp_chat).
 
 ## 🔗 Social links
-**Official Telegram channel:** https://t.me/jvmfrog </br>
-**Official group in VK:** https://vk.com/studio.jvmfrog <br>
-**Telegram channel of the application:** https://t.me/freefiresettingsapp <br>
-**Crowdin if you want to help with the translation of the application**: https://crwd.in/settings-for-free-fire-app <br>
+**Official Telegram channel:** https://t.me/jvmfrog_squad </br>
+**Official group in VK:** https://vk.com/jvmfrog_squad <br>
+**Telegram channel of the application:** https://t.me/free_fire_settings_app <br>
+**Crowdin if you want to help with the translation of the application**: https://crwd.in/settings_for_free_fire_app <br>
 
 ## 🗂️ License
 
