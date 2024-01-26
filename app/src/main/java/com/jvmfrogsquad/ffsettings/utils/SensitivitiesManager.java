@@ -105,9 +105,9 @@ public class SensitivitiesManager {
 
     private String getAdUnitId() {
         if (BuildConfig.DEBUG) {
-            return TEST_GITHUB_MANUFACTURERS_FILES_PATH;
+            return TEST_GITHUB_SENSITIVITIES_FILES_PATH;
         } else {
-            return GITHUB_MANUFACTURERS_FILES_PATH;
+            return GITHUB_SENSITIVITIES_FILES_PATH;
         }
     }
 }
