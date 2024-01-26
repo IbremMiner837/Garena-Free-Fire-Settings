@@ -16,6 +16,7 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.jvmfrogsquad.ffsettings.BuildConfig;
 import com.jvmfrogsquad.ffsettings.model.SensitivityModel;
 
 import org.json.JSONArray;
@@ -26,7 +27,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SensitivitiesManager {
-    public static String GITHUB_SENSITIVITIES_FILES_PATH = "https://raw.githubusercontent.com/IbremMiner837/Garena-Free-Fire-Settings/master/app/src/main/assets/sensitivity_settings/";
+    public static String TEST_GITHUB_SENSITIVITIES_FILES_PATH = "https://raw.githubusercontent.com/IbremMiner837/Garena-Free-Fire-Settings/master/app/src/main/assets/sensitivity_settings/";
+    public static String GITHUB_SENSITIVITIES_FILES_PATH = "https://raw.githubusercontent.com/Ibragim837/Garena-Free-Fire-Settings/master/app/src/main/assets/sensitivity_settings/";
     private final List<SensitivityModel> sensitivitiesSet = new ArrayList<>();
     private final MutableLiveData<Boolean> isRequestFinished = new MutableLiveData<>();
 
@@ -43,7 +45,7 @@ public class SensitivitiesManager {
             isRequestFinished.setValue(false);
             try {
                 RequestQueue queue = Volley.newRequestQueue(context);
-                JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, GITHUB_SENSITIVITIES_FILES_PATH + manufacturer + ".json", null,
+                JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, getAdUnitId() + manufacturer + ".json", null,
                         response -> {
                             try {
                                 parseResponse(response);
@@ -99,5 +101,13 @@ public class SensitivitiesManager {
                     break;
             }
         };
+    }
+
+    private String getAdUnitId() {
+        if (BuildConfig.DEBUG) {
+            return TEST_GITHUB_MANUFACTURERS_FILES_PATH;
+        } else {
+            return GITHUB_MANUFACTURERS_FILES_PATH;
+        }
     }
 }

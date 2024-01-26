@@ -17,6 +17,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.RequestQueue.RequestEventListener;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.jvmfrogsquad.ffsettings.BuildConfig;
 import com.jvmfrogsquad.ffsettings.model.ManufacturersModel;
 
 import org.json.JSONArray;
@@ -27,7 +28,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ManufacturerManager {
-    private static final String GITHUB_MANUFACTURERS_FILES_PATH = "https://raw.githubusercontent.com/IbremMiner837/Garena-Free-Fire-Settings/master/app/src/main/assets/sensitivity_settings/manufacturers.json";
+    private static final String TEST_GITHUB_MANUFACTURERS_FILES_PATH = "https://raw.githubusercontent.com/IbremMiner837/Garena-Free-Fire-Settings/master/app/src/main/assets/sensitivity_settings/manufacturers.json";
+    private static final String GITHUB_MANUFACTURERS_FILES_PATH = "https://raw.githubusercontent.com/Ibragim837/Garena-Free-Fire-Settings/master/app/src/main/assets/sensitivity_settings/manufacturers.json";
     private final List<ManufacturersModel> manufacturersSet = new ArrayList<>();
     private final MutableLiveData<Boolean> isRequestFinished = new MutableLiveData<>();
     private final MutableLiveData<Boolean> isReadyLiveData = new MutableLiveData<>();
@@ -67,7 +69,7 @@ public class ManufacturerManager {
             isReadyLiveData.setValue(false);
             try {
                 RequestQueue queue = Volley.newRequestQueue(context);
-                JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, GITHUB_MANUFACTURERS_FILES_PATH, null,
+                JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, getAdUnitId(), null,
                         response -> {
                             try {
                                 parseResponse(response);
@@ -118,5 +120,13 @@ public class ManufacturerManager {
                     break;
             }
         };
+    }
+
+    private String getAdUnitId() {
+        if (BuildConfig.DEBUG) {
+            return TEST_GITHUB_MANUFACTURERS_FILES_PATH;
+        } else {
+            return GITHUB_MANUFACTURERS_FILES_PATH;
+        }
     }
 }
