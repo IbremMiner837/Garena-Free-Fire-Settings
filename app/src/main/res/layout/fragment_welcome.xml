@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="8dp"
-    tools:context=".ui.fragment.WelcomeFragment">
+    tools:context="studio.jvmfrog.ffsettings.ui.fragment.WelcomeFragment">
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/logo"

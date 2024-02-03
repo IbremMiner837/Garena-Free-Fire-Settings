@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="8dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.jvmfrogsquad.ffsettings.ui.fragment.AboutAppFragment"
+    tools:context="studio.jvmfrog.ffsettings.ui.fragment.AboutAppFragment"
     android:orientation="vertical">
 
     <com.google.android.material.card.MaterialCardView
@@ -103,7 +103,6 @@
                 app:iconPadding="16dp"
                 app:iconSize="24dp"
                 android:textAlignment="textStart"
-                android:visibility="gone"
                 style="@style/Widget.Material3.Button.TextButton"/>
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
@@ -169,7 +168,6 @@
                 app:iconTintMode="screen"
                 app:iconTint="#00ffffff"
                 android:textAlignment="textStart"
-                android:visibility="gone"
                 style="@style/Widget.Material3.Button.TextButton"/>
 
             <com.google.android.material.button.MaterialButton
@@ -184,7 +182,6 @@
                 app:iconTintMode="screen"
                 app:iconTint="#00ffffff"
                 android:textAlignment="textStart"
-                android:visibility="gone"
                 style="@style/Widget.Material3.Button.TextButton"/>
 
             <com.google.android.material.button.MaterialButton

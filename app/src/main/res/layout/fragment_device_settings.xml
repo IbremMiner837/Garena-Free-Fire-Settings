@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView
-    tools:context="com.jvmfrogsquad.ffsettings.ui.fragment.DeviceSettingsFragment"
+    tools:context="com.jvmfrog.ffsettings.studio.jvmfrogsquad.ffsettings.ui.fragment.DeviceSettingsFragment"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -32,7 +32,7 @@
                 android:textStyle="bold"
                 style="@style/Widget.MaterialComponents.TextView"/>
 
-            <com.jvmfrogsquad.ffsettings.ui.components.CustomSliderView
+            <studio.jvmfrog.ffsettings.ui.components.CustomSliderView
                 android:id="@+id/review_slider"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -40,7 +40,7 @@
                 app:value="58.0"
                 app:enabled="false"/>
 
-            <com.jvmfrogsquad.ffsettings.ui.components.CustomSliderView
+            <studio.jvmfrog.ffsettings.ui.components.CustomSliderView
                 android:id="@+id/collimator_slider"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
                 app:value="58.0"
                 app:enabled="false"/>
 
-            <com.jvmfrogsquad.ffsettings.ui.components.CustomSliderView
+            <studio.jvmfrog.ffsettings.ui.components.CustomSliderView
                 android:id="@+id/x2_scope_slider"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -56,7 +56,7 @@
                 app:value="58.0"
                 app:enabled="false"/>
 
-            <com.jvmfrogsquad.ffsettings.ui.components.CustomSliderView
+            <studio.jvmfrog.ffsettings.ui.components.CustomSliderView
                 android:id="@+id/x4_scope_slider"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
                 app:value="58.0"
                 app:enabled="false"/>
 
-            <com.jvmfrogsquad.ffsettings.ui.components.CustomSliderView
+            <studio.jvmfrog.ffsettings.ui.components.CustomSliderView
                 android:id="@+id/sniper_scope"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
                 app:value="58.0"
                 app:enabled="false"/>
 
-            <com.jvmfrogsquad.ffsettings.ui.components.CustomSliderView
+            <studio.jvmfrog.ffsettings.ui.components.CustomSliderView
                 android:id="@+id/free_look_slider"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -80,7 +80,7 @@
                 app:value="58.0"
                 app:enabled="false"/>
 
-            <com.jvmfrogsquad.ffsettings.ui.components.CustomSliderView
+            <studio.jvmfrog.ffsettings.ui.components.CustomSliderView
                 android:id="@+id/fire_button_slider"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

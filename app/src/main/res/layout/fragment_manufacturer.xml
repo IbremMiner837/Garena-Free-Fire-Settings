@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:paddingHorizontal="8dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.jvmfrogsquad.ffsettings.ui.fragment.ManufacturerFragment">
+    tools:context="com.jvmfrog.ffsettings.studio.jvmfrogsquad.ffsettings.ui.fragment.ManufacturerFragment">
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/setUserNameBtn"
