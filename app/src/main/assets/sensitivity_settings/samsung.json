@@ -84,6 +84,22 @@
     {
       "__id__": "LSZUwBY41j5ZKYHruExX",
       "manufacturer": "Samsung",
+      "name": "A54",
+      "settings_source_url": "",
+      "dpi": 0,
+      "fire_button": 49,
+      "sensitivities": {
+        "review": 100,
+        "collimator": 100,
+        "x2_scope": 100,
+        "x4_scope": 100,
+        "sniper_scope": 100,
+        "free_review": 100
+      }
+    },
+    {
+      "__id__": "LSZUwBY41j5ZKYHruExX",
+      "manufacturer": "Samsung",
       "name": "A53",
       "settings_source_url": "",
       "dpi": 0,
